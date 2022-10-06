@@ -1,0 +1,64 @@
+@import '../../scss/variables';
+
+.fon {
+	background-image: url('https://stilistic.ru/imgs/org/879/30879/studiya-lazernoy-epilyacii-izum-na-kozhevnicheskoy-ulice_1662771578_16.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	.container {
+		padding: 100px 0;
+		max-width: 1160px;
+		margin: 0 auto;
+
+		h1 {
+			letter-spacing: 1px;
+			max-width: 640px;
+			color: grey;
+			font-weight: 700;
+			font-size: 52px;
+			line-height: 1.23;
+			text-align: left;
+			margin-bottom: 60px;
+			span {
+				color: $pink;
+			}
+		}
+		.buttons {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+			button {
+				cursor: pointer;
+				padding: 20px 35px;
+				border: none;
+				border-radius: 12px;
+				outline: none;
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+// BUTTONS
+.primary {
+	background-color: $pink;
+	color: $white;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		background-color: $white;
+		color: $black;
+	}
+}
+
+.secondary {
+	background-color: $white;
+	color: $black;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		background-color: $pink;
+		color: $white;
+	}
+}
