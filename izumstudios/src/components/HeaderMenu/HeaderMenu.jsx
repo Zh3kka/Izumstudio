@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../img/logo.png'
+import logo from '../../img/logo.webp'
 import styles from './HeaderMenu.module.scss'
 
 const HeaderMenu = () => {

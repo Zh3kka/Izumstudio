@@ -10,11 +10,11 @@
 	justify-content: center;
 	gap: 278px;
 	.menu {
-		ul {
+		> ul {
 			display: flex;
 			gap: 140px;
 			list-style-type: none;
-			li {
+			> li {
 				color: $black;
 				font-size: 16px;
 				font-weight: 600;
