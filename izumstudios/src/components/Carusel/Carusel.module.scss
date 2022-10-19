@@ -1,0 +1,15 @@
+.cardGroup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.card {
+	width: 400px;
+	height: 580px;
+	padding: 20px;
+}
+.cardTitle {
+	text-align: center;
+	margin: 10px;
+}

@@ -11,6 +11,7 @@ import BenefitFour from './components/BenefitFour/BenefitFour'
 import BenefitFive from './components/BenefitFive/BenefitFive'
 import Tasks from './components/Tasks/Tasks'
 import Gallery from './components/Gallery/Gallery'
+import Carusel from './components/Carusel/Carusel'
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 			<BenefitFive />
 			<Tasks />
 			<Gallery />
+			<Carusel />
 		</div>
 	)
 }

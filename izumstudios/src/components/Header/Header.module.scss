@@ -1,7 +1,7 @@
 @import '../../scss/variables';
 
 .fon {
-	background-image: url('https://stilistic.ru/imgs/org/879/30879/studiya-lazernoy-epilyacii-izum-na-kozhevnicheskoy-ulice_1662771578_16.webp');
+	background-color: $black;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -15,7 +15,7 @@
 		h1 {
 			letter-spacing: 1px;
 			max-width: 640px;
-			color: grey;
+			color: $white;
 			font-weight: 700;
 			font-size: 52px;
 			line-height: 1.23;
