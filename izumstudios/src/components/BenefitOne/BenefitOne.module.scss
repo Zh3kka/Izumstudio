@@ -1,59 +1,58 @@
 @import '../../scss/variables';
 
 .container {
-    padding: 40px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    .titles {
-        max-width: 700px;
-        > h4 {
-            font-size: 52px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-bottom: 10px;
-            > span {
-                color: $pink;
-            }
-        }
-        > p {
-            font-size: 32px;
-            font-family: sans-serif;
-        }
-    }
-    >img {
-        width: 600px;
-        height: 600px;
-        border-radius: 30px;
-    }
+	padding: 40px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	.titles {
+		max-width: 700px;
+		> h4 {
+			font-size: 52px;
+			font-weight: 700;
+			font-family: sans-serif;
+			margin-bottom: 10px;
+			> span {
+				color: $pink;
+			}
+		}
+		> p {
+			font-size: 32px;
+			font-family: sans-serif;
+		}
+	}
+	> img {
+		width: 600px;
+		height: 620px;
+		border-radius: 30px;
+	}
 }
 
 .block {
-    background-color: $black;
-    height: 100px;
-    width: 100px;
+	background-color: $black;
+	height: 100px;
+	width: 100px;
 }
 
 // BUTTONS
 .primary {
-    cursor: pointer;
-    padding: 20px 35px;
-    border: none;
-    border-radius: 12px;
-    outline: none;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1px;
+	cursor: pointer;
+	padding: 20px 35px;
+	border: none;
+	border-radius: 12px;
+	outline: none;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
 	background-color: $pink;
 	color: $white;
-    font-family: sans-serif;
+	font-family: sans-serif;
 	transition: all 0.4s ease-in-out;
-    font-weight: 700;
+	font-weight: 700;
 	&:hover {
 		background-color: $white;
 		color: $black;
 	}
 }
-

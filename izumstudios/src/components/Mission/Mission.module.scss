@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+
+.container {
+	padding: 50px;
+	margin: 0 auto;
+	background-color: rgba(34, 34, 34, 0.03);
+	.titles {
+		max-width: 900px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		text-align: center;
+		margin: 0 auto;
+		> h1 {
+			font-size: 52px;
+			font-weight: bold;
+		}
+		> span {
+			font-size: 24px;
+			max-width: 886px;
+			font-weight: bold;
+		}
+		> p {
+			font-size: 18px;
+		}
+	}
+}

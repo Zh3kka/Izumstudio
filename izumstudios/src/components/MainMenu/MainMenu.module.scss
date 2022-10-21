@@ -17,6 +17,7 @@ ul {
 			transition: all 0.3s ease;
 			&:hover {
 				color: $pink;
+				text-decoration: none;
 			}
 		}
 	}

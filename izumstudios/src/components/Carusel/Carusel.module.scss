@@ -1,15 +1,29 @@
 .cardGroup {
+	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-}
-.card {
-	width: 400px;
-	height: 580px;
-	padding: 20px;
-}
-.cardTitle {
-	text-align: center;
-	margin: 10px;
+	border: none;
+	.card {
+		width: 400px;
+		height: 580px;
+		padding: 20px;
+		> img {
+			border-radius: 50%;
+		}
+		> h2 {
+			text-align: center;
+			margin: 8px;
+			font-weight: bold;
+		}
+		> span {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
 }

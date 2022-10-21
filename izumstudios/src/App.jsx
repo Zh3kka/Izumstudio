@@ -1,4 +1,5 @@
 import styles from './scss/app.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import HeaderMenu from './components/HeaderMenu/HeaderMenu'
 import MainMenu from './components/MainMenu/MainMenu'
 import Header from './components/Header/Header'
@@ -12,6 +13,10 @@ import BenefitFive from './components/BenefitFive/BenefitFive'
 import Tasks from './components/Tasks/Tasks'
 import Gallery from './components/Gallery/Gallery'
 import Carusel from './components/Carusel/Carusel'
+import Reviews from './components/Reviews/Reviews'
+import Select from './components/Select/Select'
+import Mission from './components/Mission/Mission'
+import { Contacts } from './components/Contacts/Contacts'
 
 function App() {
 	return (
@@ -29,6 +34,10 @@ function App() {
 			<Tasks />
 			<Gallery />
 			<Carusel />
+			<Reviews />
+			<Select />
+			<Mission />
+			<Contacts />
 		</div>
 	)
 }

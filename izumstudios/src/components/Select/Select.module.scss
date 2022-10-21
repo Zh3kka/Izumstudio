@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+
+.container {
+	padding: 30px;
+	text-align: center;
+	> h1 {
+		font-weight: bold;
+		font-size: 32px;
+		margin-bottom: 15px;
+		> span {
+			color: $pink;
+		}
+	}
+	.select {
+		padding: 10px;
+		.formSelect {
+			padding: 5px;
+			border-radius: 10px;
+			width: 150px;
+			height: 100%;
+			text-align: center;
+			outline: none;
+			cursor: pointer;
+			font-size: 18px;
+		}
+	}
+}
