@@ -14,7 +14,8 @@
 		padding: 30px;
 		display: flex;
 		justify-content: center;
-		gap: 124px;
+		flex-wrap: wrap;
+		gap: 120px;
 		.infoTitle {
 			display: flex;
 			flex-direction: column;
@@ -43,10 +44,32 @@
 				> span {
 					font-weight: 700;
 				}
+				> img {
+					width: 28px;
+					height: 28px;
+				}
+			}
+		}
+		.map {
+			> img {
+				width: 602px;
+
+				height: 417px;
 			}
 		}
 		> button {
 			max-width: 270px;
+		}
+	}
+}
+
+@media screen and (max-width: 1244px) {
+	.container {
+		.information {
+			gap: 40px;
+			text-align: center;
+		}
+		.map {
 		}
 	}
 }

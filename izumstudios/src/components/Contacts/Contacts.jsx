@@ -16,35 +16,29 @@ export const Contacts = () => {
 					</div>
 					<div className={styles.adress}>
 						<p>
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
+							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
+							<img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Новокузнецкая,&nbsp;</span> ул.Пятницкая, 20, стр.1
 						</p>
 						<p>
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
+							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
+							<img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Таганская,&nbsp;</span> ул.Николоямская, 40, стр.1
 						</p>
 						<p>
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
+							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Новослободская,&nbsp;</span>ул.Долгоруковская, 4А
 						</p>
 						<p>
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
+							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Парк культуры,&nbsp;</span> ул.Пречистенка, 40/2с1
 						</p>
 						<p>
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
+							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Павелецкая,&nbsp;</span> ул.Кожевническая, 7, стр.1
 						</p>
 						<p>
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
-							<img src={metro} alt='метро' width={28} height={28} />{' '}
+							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Смоленская,&nbsp;</span> ул. Арбат, 54/2 стр. 1
 						</p>
 					</div>
@@ -56,7 +50,7 @@ export const Contacts = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<img src={map} alt='карта' width={602} height={417} />
+						<img src={map} alt='карта' width={560} height={380} />
 					</a>
 				</div>
 			</div>

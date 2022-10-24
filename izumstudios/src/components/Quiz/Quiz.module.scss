@@ -1,0 +1,39 @@
+@import '../../scss/variables';
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	> .quiz {
+		padding: 30px;
+		-webkit-box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.42);
+		-moz-box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.42);
+		box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.42);
+		.quiz__section {
+			.quiz__info {
+				display: flex;
+				> h5 {
+					font-size: 32px;
+					max-width: 860px;
+					font-weight: 600;
+					> span {
+						color: $pink;
+					}
+				}
+				> h1 {
+					font-size: 42px;
+				}
+			}
+			.question__text {
+				margin: 30px 0;
+				> h1 {
+				}
+				.answer__question {
+					margin-top: 30px;
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}
