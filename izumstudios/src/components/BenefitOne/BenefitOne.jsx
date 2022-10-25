@@ -4,7 +4,7 @@ import one from '../../img/one.webp'
 
 const BenefitOne = () => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id='Apparat'>
 			<div className={styles.titles}>
 				<h4>
 					<span>Мощный премиальный аппарат</span> — требуется меньше процедур в

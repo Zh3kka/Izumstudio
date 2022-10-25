@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const Reviews = () => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id='Reviews'>
 			<h1>
 				<span>10 000</span>довольных клиентов выбрали #IZUM
 			</h1>

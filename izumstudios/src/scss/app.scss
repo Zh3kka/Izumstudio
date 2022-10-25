@@ -1,11 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import './variables';
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.arrowBtn {
+	position: absolute;
+	right: 0;
+	bottom: 10%;
+	background: #333;
+	width: 150px;
+	height: 27px;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #ccc;
 }
 
 ::-webkit-scrollbar {
@@ -13,11 +24,10 @@
 }
 
 ::-webkit-scrollbar-track {
-	background-color: transparent
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: $pink;
 	border-radius: 8px;
-	// border: 1px solid rgba(34, 34, 34, 0.2);
 }

@@ -1,38 +1,61 @@
 import React from 'react'
 import logo from '../../img/logo.webp'
-import style from './MainMenu.module.scss'
+import styles from './MainMenu.module.scss'
+import { Link } from 'react-scroll'
 
 const MainMenu = () => {
 	return (
-		<div className={style.container}>
+		<div className={styles.container}>
 			<nav>
 				<a href='/'>
 					<img src={logo} alt='Логотип izumstudios' width={134} height={80} />
 				</a>
 				<ul>
 					<li>
-						<a href='/'>На главную</a>
+						<Link
+							activeClass={styles.active}
+							to='Top'
+							spy={true}
+							smooth={true}
+							duration={300}
+						>
+							Главная
+						</Link>
 					</li>
 					<li>
-						<a href='/'>О сети #IZUM</a>
+						<Link to='About' spy={true} smooth={true} duration={300}>
+							О сети #IZUM
+						</Link>
 					</li>
 					<li>
-						<a href='/'>Мощный аппарат</a>
+						<Link to='Apparat' spy={true} smooth={true} duration={300}>
+							Мощный аппарат
+						</Link>
 					</li>
 					<li>
-						<a href='/'>Наши специалисты</a>
+						<Link to='Masters' spy={true} smooth={true} duration={300}>
+							Наши специалисты
+						</Link>
 					</li>
 					<li>
-						<a href='/'>Отзывы</a>
+						<Link to='Reviews' spy={true} smooth={true} duration={300}>
+							Отзывы
+						</Link>
 					</li>
 					<li>
-						<a href='/'>Цены</a>
+						<Link to='Price' spy={true} smooth={true} duration={300}>
+							Цены
+						</Link>
 					</li>
 					<li>
-						<a href='/'>Абонементы</a>
+						<Link to='Price' spy={true} smooth={true} duration={300}>
+							Абонементы
+						</Link>
 					</li>
 					<li>
-						<a href='/'>Контакты</a>
+						<Link to='Contacts' spy={true} smooth={true} duration={300}>
+							Контакты
+						</Link>
 					</li>
 				</ul>
 			</nav>

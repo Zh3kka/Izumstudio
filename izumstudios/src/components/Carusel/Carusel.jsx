@@ -9,7 +9,7 @@ import car5 from '../../img/car5.jpg'
 
 const Carusel = () => {
 	return (
-		<div className={styles.cardGroup}>
+		<div className={styles.cardGroup} id='Masters'>
 			<div className={styles.card}>
 				<img src={car1} alt='master1' width={360} height={360} />
 				<h2 className={styles.cardTitle}>Супрунова Аксинья</h2>

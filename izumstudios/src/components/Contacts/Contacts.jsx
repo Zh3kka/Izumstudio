@@ -5,7 +5,7 @@ import map from '../../img/map.webp'
 
 export const Contacts = () => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id='Contacts'>
 			<h1>Контакты</h1>
 			<div className={styles.information}>
 				<div className={styles.leftInfo}>

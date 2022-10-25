@@ -3,7 +3,7 @@ import styles from './HeaderTitle.module.scss'
 
 const HeaderTitle = () => {
 	return (
-		<div className={styles.heading}>
+		<div className={styles.heading} id='About'>
 			<h3>
 				Диодный лазер нового поколения. Рекордная скорость процедуры - 1 час всё
 				тело. <span>Абсолютно безопасно</span>.<br />

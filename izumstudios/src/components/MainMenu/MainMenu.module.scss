@@ -16,21 +16,24 @@
 			list-style-type: none;
 			gap: 20px;
 			li {
-				a {
-					color: $black;
-					font-size: 16px;
-					font-weight: 600;
-					font-family: sans-serif;
+				cursor: pointer;
+				color: $black;
+				font-size: 16px;
+				font-weight: 600;
+				font-family: sans-serif;
+				text-decoration: none;
+				transition: all 0.3s ease;
+				&:hover {
+					color: $pink;
 					text-decoration: none;
-					transition: all 0.3s ease;
-					&:hover {
-						color: $pink;
-						text-decoration: none;
-					}
 				}
 			}
 		}
 	}
+}
+
+.active {
+	color: $pink;
 }
 
 @media screen and (max-width: 1024px) {

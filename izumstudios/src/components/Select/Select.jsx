@@ -15,7 +15,7 @@ const Select = () => {
 			: setWomanContentVisible(false)
 	}, [sex])
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id='Price'>
 			<h1>
 				{' '}
 				<span> Спецпредложения</span>
