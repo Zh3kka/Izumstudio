@@ -15,8 +15,8 @@ const Footer = () => {
 						<img src={whatsapp} width={25} height={25} alt='инстаграмм' />
 					</div>
 					<p>
-						8 (495) 149-70-36 <br />
-						izumstudios@mail.ru
+						<a href='/'>8 (495) 149-70-36</a>
+						<a href='/'>izumstudios@mail.ru</a>
 					</p>
 				</div>
 				<div className={styles.footer__nav}>
@@ -58,11 +58,11 @@ const Footer = () => {
 					</h5>
 				</div>
 				<div className={styles.footer__politics}>
-					<h3>
+					<h5>
 						Политика конфиденциальности
 						<br />
 						Все права защищены
-					</h3>
+					</h5>
 				</div>
 			</div>
 		</footer>

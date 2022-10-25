@@ -13,3 +13,12 @@
 		font-weight: bold;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.heading {
+		> h3 {
+			font-size: 28px;
+			text-align: center;
+		}
+	}
+}

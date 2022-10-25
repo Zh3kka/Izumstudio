@@ -4,11 +4,22 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	flex-wrap: wrap;
-	> img {
-		width: 570px;
-		height: 500px;
-		padding: 8px;
+	> .images {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		> img {
+			width: 450px;
+			height: 450px;
+			border-radius: 15px;
+			padding: 8px;
+		}
 	}
 	button {
 		margin: 30px auto;
@@ -32,9 +43,12 @@
 
 @media screen and (max-width: 1024px) {
 	.container {
-		> img {
-			width: 300px;
-			height: 275px;
+		.images {
+			gap: 10px;
+			> img {
+				width: 320px;
+				height: 300px;
+			}
 		}
 	}
 }

@@ -10,12 +10,14 @@ import six from '../../img/6.webp'
 const Gallery = () => {
 	return (
 		<div className={styles.container}>
-			<img src={first} alt='первая картинка галерии' />
-			<img src={second} alt='вторая картинка галерии' />
-			<img src={three} alt='третья картинка галерии' />
-			<img src={four} alt='четвертая картинка галерии' />
-			<img src={five} alt='пятая картинка галерии' />
-			<img src={six} alt='шестая картинка галерии' />
+			<div className={styles.images}>
+				<img src={first} alt='первая картинка галерии' />
+				<img src={second} alt='вторая картинка галерии' />
+				<img src={three} alt='третья картинка галерии' />
+				<img src={four} alt='четвертая картинка галерии' />
+				<img src={five} alt='пятая картинка галерии' />
+				<img src={six} alt='шестая картинка галерии' />
+			</div>
 			<button className={styles.primary}>записаться онлайн</button>
 		</div>
 	)

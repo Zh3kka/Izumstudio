@@ -12,8 +12,16 @@ footer {
 		.footer__info {
 			display: flex;
 			flex-direction: column;
+			gap: 20px;
 			> p {
-				font-size: 18px;
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+				> a {
+					font-size: 18px;
+					text-decoration: none;
+					color: $black;
+				}
 			}
 		}
 		.footer__nav {
@@ -24,6 +32,19 @@ footer {
 					gap: 20px;
 					justify-content: start;
 					align-items: flex-start;
+					list-style-type: none;
+					> li {
+						> a {
+							font-weight: 500;
+							color: $black;
+							font-size: 18px;
+							text-decoration: none;
+							transition: all 0.3s ease;
+							&:hover {
+								color: $pink;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -31,6 +52,36 @@ footer {
 			max-width: 260px;
 			> h5 {
 				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	footer {
+		padding: 30px;
+		.container {
+			.footer__info {
+				> p {
+					> a {
+						font-size: 14px;
+					}
+				}
+			}
+			.footer__nav {
+				> a {
+					font-size: 12px;
+				}
+			}
+			.footer__title {
+				> h5 {
+					font-size: 14px;
+				}
+			}
+			.footer__politics {
+				> h5 {
+					font-size: 16px;
+				}
 			}
 		}
 	}

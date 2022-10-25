@@ -1,23 +1,49 @@
 @import '../../scss/variables';
 
-ul {
-	margin: 30px 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style-type: none;
-	gap: 30px;
-	li {
-		a {
-			color: $black;
-			font-size: 16px;
-			font-weight: 600;
-			font-family: sans-serif;
-			text-decoration: none;
-			transition: all 0.3s ease;
-			&:hover {
-				color: $pink;
-				text-decoration: none;
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 20px;
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		ul {
+			margin: 30px 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style-type: none;
+			gap: 20px;
+			li {
+				a {
+					color: $black;
+					font-size: 16px;
+					font-weight: 600;
+					font-family: sans-serif;
+					text-decoration: none;
+					transition: all 0.3s ease;
+					&:hover {
+						color: $pink;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		> nav {
+			> a {
+				> img {
+					width: 100px;
+					height: 60px;
+				}
+			}
+			> ul {
+				display: none;
 			}
 		}
 	}

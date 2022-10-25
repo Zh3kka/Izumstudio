@@ -1,35 +1,5 @@
 @import '../../scss/variables';
 
-.container {
-	padding: 40px;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 50px;
-	.titles {
-		max-width: 700px;
-		> h4 {
-			font-size: 52px;
-			font-weight: 700;
-			font-family: sans-serif;
-			margin-bottom: 10px;
-			> span {
-				color: $pink;
-			}
-		}
-		> p {
-			font-size: 32px;
-			font-family: sans-serif;
-		}
-	}
-	> img {
-		width: 600px;
-		height: 620px;
-		border-radius: 30px;
-	}
-}
-
 .block {
 	background-color: $black;
 	height: 100px;
@@ -54,5 +24,52 @@
 	&:hover {
 		background-color: $white;
 		color: $black;
+	}
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	flex-wrap: wrap;
+	.titles {
+		max-width: 700px;
+		> h4 {
+			font-size: 42px;
+			font-weight: 700;
+			font-family: sans-serif;
+			margin-bottom: 10px;
+			> span {
+				color: $pink;
+			}
+		}
+		> p {
+			font-size: 24px;
+			font-family: sans-serif;
+		}
+	}
+	> img {
+		width: 450px;
+		height: 450px;
+		border-radius: 30px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		padding: 20px 10px;
+		.titles {
+			max-width: 500px;
+			> h4 {
+				font-size: 32px;
+			}
+		}
+		> img {
+			width: 350px;
+			height: 350px;
+		}
 	}
 }

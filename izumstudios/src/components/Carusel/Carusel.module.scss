@@ -27,3 +27,17 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.cardGroup {
+		text-align: center;
+		.card {
+			> img {
+				width: 280px;
+				height: 280px;
+			}
+			> h2 {
+			}
+		}
+	}
+}
