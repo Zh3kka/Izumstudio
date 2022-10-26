@@ -78,7 +78,6 @@ const Reviews = () => {
 					</Carousel>
 				</div>
 			</div>
-			<button>записаться онлайн</button>
 		</div>
 	)
 }

@@ -18,7 +18,13 @@ const Gallery = () => {
 				<img src={five} alt='пятая картинка галерии' />
 				<img src={six} alt='шестая картинка галерии' />
 			</div>
-			<button className={styles.primary}>записаться онлайн</button>
+			<a
+				href='https://n177562.yclients.com/group:147144/city:2#1'
+				target='_blank'
+				rel='noreferrer'
+			>
+				<button className={styles.primary}>записаться онлайн</button>
+			</a>
 		</div>
 	)
 }

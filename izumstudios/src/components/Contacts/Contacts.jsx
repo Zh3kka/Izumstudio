@@ -10,7 +10,6 @@ export const Contacts = () => {
 			<div className={styles.information}>
 				<div className={styles.leftInfo}>
 					<div className={styles.infoTitle}>
-						<a href='/'>Заказать обратный звонок</a>
 						<a href='tel:+74951204581'>8(495)120-45-81</a>
 						<a href='mailto:mail to:izumstudios@mail.ru'>izumstudios@mail.ru</a>
 					</div>

@@ -10,10 +10,22 @@ const Header = () => {
 					<span> безопасной эпиляции на диодном аппарате </span>нового поколения
 				</h1>
 				<div className={styles.buttons}>
-					<button className={styles.primary}>записаться онлайн</button>
-					<button className={styles.secondary}>
-						Познакомиться с #Izum за 40 секунд
-					</button>
+					<a
+						href='https://n177562.yclients.com/group:147144/city:2#1'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<button className={styles.primary}>записаться онлайн</button>
+					</a>
+					<a
+						href='https://www.youtube.com/watch?v=IFsHjiOgPEM'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<button className={styles.secondary}>
+							Познакомиться с #Izum за 40 секунд
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>

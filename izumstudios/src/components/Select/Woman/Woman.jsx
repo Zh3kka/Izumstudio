@@ -17,7 +17,13 @@ const Woman = () => {
 						<h2>Разовый визит</h2>
 						<p>2000&#8381;</p>
 						<span>3000&#8381;</span>
-						<button>Записаться</button>
+						<a
+							href='https://n177562.yclients.com/group:147144/city:2#1'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<button className={styles.primary}>записаться</button>
+						</a>
 					</div>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
@@ -41,7 +47,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>10 000 &#8381;</p>
 								<span>15 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 						<div className={styles.subImage}>
@@ -59,7 +71,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>20 000&#8381;</p>
 								<span>30 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 					</div>
@@ -76,7 +94,13 @@ const Woman = () => {
 						<h2>Разовый визит</h2>
 						<p>2000&#8381;</p>
 						<span>3000&#8381;</span>
-						<button>Записаться</button>
+						<a
+							href='https://n177562.yclients.com/group:147144/city:2#1'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<button className={styles.primary}>записаться</button>
+						</a>
 					</div>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
@@ -99,7 +123,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>10 000 &#8381;</p>
 								<span>15 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 						<div className={styles.subImage}>
@@ -117,7 +147,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>20 000&#8381;</p>
 								<span>30 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 					</div>
@@ -134,7 +170,13 @@ const Woman = () => {
 						<h2>Разовый визит</h2>
 						<p>2000&#8381;</p>
 						<span>3000&#8381;</span>
-						<button>Записаться</button>
+						<a
+							href='https://n177562.yclients.com/group:147144/city:2#1'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<button className={styles.primary}>записаться</button>
+						</a>
 					</div>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
@@ -157,7 +199,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>10 000 &#8381;</p>
 								<span>15 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 						<div className={styles.subImage}>
@@ -175,7 +223,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>20 000&#8381;</p>
 								<span>30 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 					</div>
@@ -192,7 +246,13 @@ const Woman = () => {
 						<h2>Разовый визит</h2>
 						<p>2000&#8381;</p>
 						<span>3000&#8381;</span>
-						<button>Записаться</button>
+						<a
+							href='https://n177562.yclients.com/group:147144/city:2#1'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<button className={styles.primary}>записаться</button>
+						</a>
 					</div>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
@@ -215,7 +275,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>10 000 &#8381;</p>
 								<span>15 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 						<div className={styles.subImage}>
@@ -233,7 +299,13 @@ const Woman = () => {
 							<div className={styles.subNaming}>
 								<p>20 000&#8381;</p>
 								<span>30 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/406167'
+									target='_blank'
+									rel='noreferrer'
+								>
+									купить
+								</a>
 							</div>
 						</div>
 					</div>
@@ -250,7 +322,13 @@ const Woman = () => {
 						<h2>Разовый визит</h2>
 						<p>2000&#8381;</p>
 						<span>3000&#8381;</span>
-						<button>Записаться</button>
+						<a
+							href='https://n177562.yclients.com/group:147144/city:2#1'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<button className={styles.primary}>записаться</button>
+						</a>
 					</div>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
@@ -300,4 +378,5 @@ const Woman = () => {
 		</div>
 	)
 }
+
 export default Woman
