@@ -18,19 +18,34 @@
 			font-size: 20px;
 			img {
 				color: $pink;
+				width: 20px;
+				height: 25px;
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
 	.container {
 		padding: 40px;
 		> h2 {
 			font-size: 36px;
 		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		> h2 {
+			font-size: 28px;
+		}
 		> ul {
 			> li {
+				font-size: 16px;
+				> img {
+					width: 18px;
+					height: 20px;
+				}
 			}
 		}
 	}

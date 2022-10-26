@@ -32,6 +32,7 @@ const Woman = () => {
 								width={240}
 								height={121}
 								className={styles.image}
+								style={{ zIndex: -1 }}
 							/>
 							<h2>
 								Абонемент

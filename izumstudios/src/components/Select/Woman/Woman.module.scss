@@ -5,6 +5,7 @@
 	margin: 0 auto;
 	text-align: center;
 	padding: 30px 0;
+	z-index: -1;
 	> h2 {
 		margin-top: 30px;
 		font-size: 32px;
@@ -16,6 +17,10 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 50px;
+		> img {
+			width: 429px;
+			height: 410px;
+		}
 		.description {
 			display: flex;
 			align-items: center;
@@ -53,6 +58,7 @@
 					position: relative;
 					display: flex;
 					gap: 150px;
+					z-index: -1;
 					> .image {
 						border-radius: 10px;
 						text-align: start;
@@ -81,6 +87,60 @@
 							font-weight: bold;
 							&:hover {
 								color: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.container {
+		.complex {
+			.description {
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		.complex {
+			> img {
+				width: 318px;
+				height: 340px;
+			}
+			.description {
+				gap: 10px;
+				.subscription {
+					.subImage {
+						align-items: center;
+						justify-content: center;
+						gap: 50px;
+						flex-wrap: wrap;
+						> h2 {
+							bottom: 0px;
+							top: 57px;
+							left: 10px;
+						}
+						> img {
+							width: 200px;
+							height: 106px;
+						}
+						.subNaming {
+							> p {
+								font-size: 18px;
+							}
+							> span {
+								font-size: 18px;
+							}
+							> a {
+								font-size: 18px;
 							}
 						}
 					}

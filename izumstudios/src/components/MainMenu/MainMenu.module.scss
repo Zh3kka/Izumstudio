@@ -1,10 +1,13 @@
 @import '../../scss/variables';
 
 .container {
-	max-width: 1440px;
+	max-width: 100vw;
+	padding: 10px 30px;
 	margin: 0 auto;
-	padding: 20px;
-	nav {
+	position: sticky;
+	top: 0;
+	background-color: $white;
+	> nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -32,12 +35,59 @@
 	}
 }
 
+.icon {
+	display: none;
+}
+
+.popup {
+	display: none;
+}
+
 .active {
 	color: $pink;
 }
 
+.none {
+	position: fixed;
+	right: -100%;
+}
+
 @media screen and (max-width: 1024px) {
 	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.icon {
+			display: block;
+			transition: all 0.2s ease;
+		}
+		.popup {
+			margin-top: 70px;
+			display: block;
+			position: fixed;
+			top: 0;
+			right: 0;
+			background-color: $white;
+			padding: 0 10px;
+			z-index: 1090;
+			transition: all 0.15s ease-in-out;
+			> ul {
+				display: flex;
+				height: 100vh;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				list-style-type: none;
+				// margin-top: 100px;
+				gap: 20px;
+				> li {
+					font-size: 20px;
+					&:last-child {
+						margin-bottom: 140px;
+					}
+				}
+			}
+		}
 		> nav {
 			> a {
 				> img {

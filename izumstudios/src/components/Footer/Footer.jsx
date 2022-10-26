@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.scss'
+import { Link } from 'react-scroll'
 import FooterLogo from '../../img/logo.webp'
 import insta from '../../img/insta.svg'
 import whatsapp from '../../img/whatsapp.svg'
@@ -23,28 +24,92 @@ const Footer = () => {
 					<nav>
 						<ul>
 							<li>
-								<a href='/'>На главную</a>
+								<Link
+									activeClass={styles.active}
+									to='Top'
+									spy={true}
+									smooth={true}
+									duration={300}
+								>
+									Главная
+								</Link>
 							</li>
 							<li>
-								<a href='/'>О сети #IZUM</a>
+								<Link
+									to='About'
+									spy={true}
+									smooth={true}
+									duration={300}
+									activeClass={styles.active}
+								>
+									О сети #IZUM
+								</Link>
 							</li>
 							<li>
-								<a href='/'>Мощный аппарат</a>
+								<Link
+									to='Apparat'
+									spy={true}
+									smooth={true}
+									duration={300}
+									activeClass={styles.active}
+								>
+									Мощный аппарат
+								</Link>
 							</li>
 							<li>
-								<a href='/'>Наши специалисты</a>
+								<Link
+									to='Masters'
+									spy={true}
+									smooth={true}
+									duration={300}
+									activeClass={styles.active}
+								>
+									Наши специалисты
+								</Link>
 							</li>
 							<li>
-								<a href='/'>Отзывы</a>
+								<Link
+									to='Reviews'
+									spy={true}
+									smooth={true}
+									duration={300}
+									activeClass={styles.active}
+								>
+									Отзывы
+								</Link>
 							</li>
 							<li>
-								<a href='/'>Цены</a>
+								<Link
+									to='Price'
+									spy={true}
+									smooth={true}
+									duration={300}
+									activeClass={styles.active}
+								>
+									Цены
+								</Link>
 							</li>
 							<li>
-								<a href='/'>Абонементы</a>
+								<Link
+									to='Price'
+									spy={true}
+									smooth={true}
+									duration={300}
+									activeClass={styles.active}
+								>
+									Абонементы
+								</Link>
 							</li>
 							<li>
-								<a href='/'>Контакты</a>
+								<Link
+									to='Contacts'
+									spy={true}
+									smooth={true}
+									duration={300}
+									activeClass={styles.active}
+								>
+									Контакты
+								</Link>
 							</li>
 						</ul>
 					</nav>

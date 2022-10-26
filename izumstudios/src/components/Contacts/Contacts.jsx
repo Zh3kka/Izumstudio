@@ -50,7 +50,7 @@ export const Contacts = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<img src={map} alt='карта' width={560} height={380} />
+						<img src={map} alt='карта' />
 					</a>
 				</div>
 			</div>

@@ -1,7 +1,5 @@
 import styles from './scss/app.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Link } from 'react-scroll'
-import Arrow from './img/arrowUp.svg'
 import HeaderMenu from './components/HeaderMenu/HeaderMenu'
 import MainMenu from './components/MainMenu/MainMenu'
 import Header from './components/Header/Header'
@@ -42,9 +40,6 @@ function App() {
 			<Mission />
 			<Contacts />
 			<Footer />
-			<Link className={styles.arrowBtn}>
-				<img src={Arrow} width={30} height={30} alt='стрелка вверх' />
-			</Link>
 		</div>
 	)
 }

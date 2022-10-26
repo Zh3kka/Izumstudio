@@ -51,9 +51,11 @@
 			}
 		}
 		.map {
-			> img {
-				width: 602px;
-				height: 417px;
+			> a {
+				> img {
+					width: 560px;
+					height: 380px;
+				}
 			}
 		}
 		> button {
@@ -68,7 +70,42 @@
 			gap: 40px;
 			text-align: center;
 		}
-		.map {
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		.information {
+			.map {
+				> a {
+					> img {
+						width: 370px;
+						height: 270px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		> h1 {
+			font-size: 34px;
+		}
+		.information {
+			.infoTitle {
+				> a {
+					font-size: 18px;
+				}
+			}
+			.adress {
+				> p {
+					align-items: center;
+					justify-content: center;
+					flex-wrap: wrap;
+				}
+			}
 		}
 	}
 }
