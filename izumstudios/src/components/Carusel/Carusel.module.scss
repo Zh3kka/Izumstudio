@@ -1,11 +1,17 @@
+@import '../../scss/variables';
+
 .cardGroup {
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	border: none;
+	gap: 30px;
 	.card {
+		border-radius: 15px;
+		-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+		-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 		width: 400px;
 		height: 580px;
 		padding: 20px;
@@ -13,6 +19,7 @@
 			border-radius: 50%;
 		}
 		> h2 {
+			font-size: 24px;
 			text-align: center;
 			margin: 8px;
 			font-weight: bold;
@@ -45,6 +52,25 @@
 		.cardGroup {
 			.card {
 				padding: 0px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.cardGroup {
+		.card {
+			width: auto;
+			height: auto;
+			> img {
+				width: 230px;
+				height: 230px;
+			}
+			> h2 {
+				font-size: 22px;
+			}
+			> p {
+				font-size: 16px;
 			}
 		}
 	}

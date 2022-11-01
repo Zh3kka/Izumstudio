@@ -7,10 +7,14 @@
 	position: sticky;
 	top: 0;
 	background-color: $white;
+	z-index: 10;
 	> nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		> img {
+			cursor: pointer;
+		}
 		ul {
 			margin: 30px 0;
 			display: flex;
@@ -35,6 +39,14 @@
 	}
 }
 
+a {
+	color: $black;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	&:hover {
+		color: $pink;
+	}
+}
 .icon {
 	display: none;
 }

@@ -123,3 +123,15 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: 321px) {
+	footer {
+		> .container {
+			justify-content: center;
+			gap: 15px;
+			> .footer__info {
+				max-height: max-content;
+			}
+		}
+	}
+}

@@ -2,6 +2,14 @@ import React from 'react'
 import styles from './Contacts.module.scss'
 import metro from '../../img/metro.webp'
 import map from '../../img/map.webp'
+import darkBlue from '../../img/darkBlue.webp'
+import blue from '../../img/blue.webp'
+import green from '../../img/green.webp'
+import grey from '../../img/grey.webp'
+import orange from '../../img/orange.webp'
+import purple from '../../img/purple.webp'
+import red from '../../img/red.webp'
+import yellow from '../../img/yellow.webp'
 
 export const Contacts = () => {
 	return (
@@ -15,29 +23,29 @@ export const Contacts = () => {
 					</div>
 					<div className={styles.adress}>
 						<p>
-							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
-							<img src={metro} alt='метро' />{' '}
+							<img src={green} alt='метро' /> <img src={yellow} alt='метро' />{' '}
+							<img src={orange} alt='метро' />{' '}
 							<span>&nbsp;Новокузнецкая,&nbsp;</span> ул.Пятницкая, 20, стр.1
 						</p>
 						<p>
-							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
+							<img src={purple} alt='метро' /> <img src={yellow} alt='метро' />{' '}
 							<img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Таганская,&nbsp;</span> ул.Николоямская, 40, стр.1
 						</p>
 						<p>
-							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
+							<img src={grey} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Новослободская,&nbsp;</span>ул.Долгоруковская, 4А
 						</p>
 						<p>
-							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
+							<img src={red} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Парк культуры,&nbsp;</span> ул.Пречистенка, 40/2с1
 						</p>
 						<p>
-							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
+							<img src={green} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Павелецкая,&nbsp;</span> ул.Кожевническая, 7, стр.1
 						</p>
 						<p>
-							<img src={metro} alt='метро' /> <img src={metro} alt='метро' />{' '}
+							<img src={darkBlue} alt='метро' /> <img src={blue} alt='метро' />{' '}
 							<span>&nbsp;Смоленская,&nbsp;</span> ул. Арбат, 54/2 стр. 1
 						</p>
 					</div>

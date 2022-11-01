@@ -16,7 +16,7 @@ const MainMenu = () => {
 					duration={300}
 					activeClass={styles.active}
 				>
-					<img src={logo} alt='Логотип izumstudios' width={134} height={80} />
+					<img src={logo} alt='Логотип izumstudios' width={110} height={65} />
 				</Link>
 				<ul>
 					<li>

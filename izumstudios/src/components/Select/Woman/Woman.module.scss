@@ -64,6 +64,7 @@
 						text-align: start;
 					}
 					> h2 {
+						font-size: 24px;
 						color: $white;
 						position: absolute;
 						bottom: 10px;
@@ -125,8 +126,9 @@
 						flex-wrap: wrap;
 						> h2 {
 							bottom: 0px;
-							top: 57px;
+							top: 36px;
 							left: 10px;
+							font-size: 18px;
 						}
 						> img {
 							width: 200px;
@@ -142,6 +144,78 @@
 							> a {
 								font-size: 18px;
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.container {
+		.complex {
+			> img {
+				width: 300px;
+				height: 310px;
+			}
+			.description {
+				gap: 10px;
+				.subscription {
+					> p {
+						text-align: center;
+					}
+					.subImage {
+						align-items: center;
+						justify-content: center;
+						gap: 50px;
+						flex-wrap: wrap;
+						> h2 {
+							bottom: 0px;
+							top: 26px;
+							left: 22px;
+							font-size: 14px;
+						}
+						> img {
+							width: 160px;
+							height: 80px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.container {
+		> h2 {
+			font-size: 24px;
+		}
+		.complex {
+			> img {
+				width: 260px;
+				height: 270px;
+			}
+			> .description {
+				> .naming {
+					> p {
+						font-size: 20px;
+					}
+					> h2 {
+						font-size: 20px;
+						margin: 0 auto;
+					}
+				}
+				> .subscription {
+					> .subImage {
+						gap: 26px;
+						> img {
+							width: 148px;
+						}
+						> h2 {
+							top: 21px;
+							left: 14px;
 						}
 					}
 				}
