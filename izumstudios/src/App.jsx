@@ -11,7 +11,7 @@ import BenefitFour from './components/BenefitFour/BenefitFour'
 import BenefitFive from './components/BenefitFive/BenefitFive'
 import Tasks from './components/Tasks/Tasks'
 import Gallery from './components/Gallery/Gallery'
-import Carusel from './components/Carusel/Carusel'
+import Masters from './components/Masters/Masters'
 import Reviews from './components/Reviews/Reviews'
 import Select from './components/Select/Select'
 import Mission from './components/Mission/Mission'
@@ -33,7 +33,7 @@ function App() {
 			<BenefitFive />
 			<Tasks />
 			<Gallery />
-			<Carusel />
+			<Masters />
 			<Reviews />
 			<Select />
 			<Mission />

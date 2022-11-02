@@ -15,6 +15,7 @@
 		width: 400px;
 		height: 580px;
 		padding: 20px;
+		transition: transform 0.3s ease;
 		> img {
 			border-radius: 50%;
 		}
@@ -31,6 +32,9 @@
 
 		p {
 			font-size: 16px;
+		}
+		&:hover {
+			transform: scale(1.05);
 		}
 	}
 }

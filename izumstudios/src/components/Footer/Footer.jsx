@@ -16,8 +16,8 @@ const Footer = () => {
 						<img src={whatsapp} width={25} height={25} alt='инстаграмм' />
 					</div>
 					<p>
-						<a href='/'>8 (495) 149-70-36</a>
-						<a href='/'>izumstudios@mail.ru</a>
+						<a href='tel:+74952605751'>8 (495) 260-57-51</a>
+						<a href='mailto: izumstudios@mail.ru'>izumstudios@mail.ru</a>
 					</p>
 				</div>
 				<div className={styles.footer__nav}>
