@@ -56,7 +56,9 @@ a {
 }
 
 .active {
-	color: $pink;
+	> a {
+		color: $pink;
+	}
 }
 
 .none {
