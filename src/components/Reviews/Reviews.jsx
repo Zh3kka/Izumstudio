@@ -1,15 +1,11 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import styles from './Reviews.module.scss'
-import rev1 from '../../img/rev1.jpg'
-import rev2 from '../../img/rev2.jpg'
-import rev3 from '../../img/rev3.jpg'
-import rev4 from '../../img/rev4.jpg'
-import rev5 from '../../img/rev5.jpg'
-import vid1 from '../../img/video/video1.MOV'
-import vid2 from '../../img/video/video22.MOV'
-import vid3 from '../../img/video/video3.MOV'
-import vid4 from '../../img/video/video4.MOV'
+import star from '../../img/star.svg'
+import vid1 from '../../img/video/2.mp4'
+import vid2 from '../../img/video/video2.mp4'
+import vid3 from '../../img/video/video1.mp4'
+import vid4 from '../../img/video/video4.mp4'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -27,19 +23,19 @@ const Reviews = () => {
 						showThumbs={false}
 						infiniteLoop={true}
 						showStatus={false}
-						width='100%'
+						autoPlay={false}
 					>
 						<div className={styles.images}>
-							<ReactPlayer url={vid1} controls loop={true} playing={true} />
+							<ReactPlayer url={vid1} controls width='100%' />
 						</div>
 						<div className={styles.images}>
-							<ReactPlayer url={vid2} controls />
+							<ReactPlayer url={vid2} controls width='100%' />
 						</div>
 						<div className={styles.images}>
-							<ReactPlayer url={vid3} controls />
+							<ReactPlayer url={vid3} controls width='100%' />
 						</div>
 						<div className={styles.images}>
-							<ReactPlayer url={vid4} controls />
+							<ReactPlayer url={vid4} controls width='100%' />
 						</div>
 					</Carousel>
 				</div>
@@ -51,24 +47,88 @@ const Reviews = () => {
 						showThumbs={false}
 						infiniteLoop={true}
 						showStatus={false}
-						width='100%'
 					>
 						<div className={styles.images}>
-							<img src={rev1} alt='review' width={300} height={300} />
+							<p>
+								&quot;Впервые делала процедуру, все очень понравилось, мастеру
+								отедльное спасибо, очень приятная девушка, подробно рассказала о
+								всех тонкостях лазерной эпиляции, удобное расположение)&quot;
+							</p>
+							<div className={styles.star_date}>
+								<div className={styles.stars}>
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+								</div>
+								<span>21.10.2022</span>
+							</div>
+							<h2>Елена Т.</h2>
 						</div>
 						<div className={styles.images}>
-							<img src={rev2} alt='review' width={300} height={300} />
+							<p>
+								&quot;Хожу в эту студию уже месяцев 6, была в разных районах,
+								везде всё замечательно. Всегда вежливые и доброжелательные
+								девушки, всё расскажут и объяснят. Чисто и гигиенично.&quot;
+							</p>
+							<div className={styles.star_date}>
+								<div className={styles.stars}>
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+								</div>
+								<span>29.09.2022</span>
+							</div>
+							<h2>Валенитна М.</h2>
 						</div>
 						<div className={styles.images}>
-							<img src={rev3} alt='review' width={300} height={300} />
+							<p>
+								&quot;Хорошая студия, была уже 4 раза, результат замечательный)
+								Мастера работают профессионально, вежливые и с индивидуальным
+								подходом. Очень благодарнаЙ!&quot;
+							</p>
+							<div className={styles.star_date}>
+								<div className={styles.stars}>
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+								</div>
+								<span>18.10.2022</span>
+							</div>
+							<h2>Анастасия Д.</h2>
 						</div>
 						<div className={styles.images}>
-							<img src={rev4} alt='review' width={300} height={300} />
-						</div>
-						<div className={styles.images}>
-							<img src={rev5} alt='review' width={300} height={300} />
+							<p>
+								&quot;Супер студия, очень приятная девушка мастер, все
+								объяснила, рассказала, подарили подарок ещё и дали клубную карту
+								Буду проходить весь курс в 10 процедур только тут!!!
+								Советую&quot;
+							</p>
+							<div className={styles.star_date}>
+								<div className={styles.stars}>
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+									<img src={star} alt='звезда' width={14} height={14} />
+								</div>
+								<span>28.08.2021</span>
+							</div>
+							<h2>Анастасия Т.</h2>
 						</div>
 					</Carousel>
+					<a
+						href='https://yandex.ru/search/?text=izumstudios&lr=213'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						Ссылка на отзывы
+					</a>
 				</div>
 			</div>
 		</div>

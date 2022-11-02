@@ -48,8 +48,8 @@ export const Contacts = () => {
 							<img src={darkBlue} alt='метро' /> <img src={blue} alt='метро' />{' '}
 							<span>&nbsp;Смоленская,&nbsp;</span> ул. Арбат, 54/2 стр. 1
 						</p>
-					</div>
-					<button>Онлайн консультация</button>
+					</div>{' '}
+					<a href='tel:+74952605751'>Онлайн консультация</a>
 				</div>
 				<div className={styles.map}>
 					<a

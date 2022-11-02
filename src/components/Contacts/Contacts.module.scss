@@ -16,6 +16,25 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 120px;
+		> .leftInfo {
+			> a {
+				margin-top: 50px;
+				padding: 20px;
+				font-size: 18px;
+				font-weight: 600;
+				background-color: $pink;
+				color: $white;
+				border-radius: 10px;
+				border: 1px solid $pink;
+				text-decoration: none;
+				transition: all 0.3s ease;
+				&:hover {
+					color: $pink;
+					background-color: $white;
+					border: 1px solid $black;
+				}
+			}
+		}
 		.infoTitle {
 			display: inline-flex;
 			flex-direction: column;
@@ -36,7 +55,7 @@
 		.adress {
 			display: flex;
 			flex-direction: column;
-			margin-top: 18px;
+			margin: 20px 0px;
 			> p {
 				display: flex;
 				align-items: center;
@@ -69,6 +88,20 @@
 		.information {
 			gap: 40px;
 			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 565px) {
+	.container {
+		.information {
+			.map {
+				> a {
+					> img {
+						width: 380px;
+						height: 300px;
+					}
+				}
+			}
 		}
 	}
 }

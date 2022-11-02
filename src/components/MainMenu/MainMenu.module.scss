@@ -79,13 +79,14 @@ a {
 			margin-top: 70px;
 			display: block;
 			position: fixed;
-			top: 0;
+			top: -21px;
 			right: 0;
 			background-color: $white;
 			padding: 0 10px;
 			z-index: 1090;
 			transition: all 0.15s ease-in-out;
 			> ul {
+				padding: 10px;
 				display: flex;
 				height: 100vh;
 				flex-direction: column;
@@ -98,6 +99,9 @@ a {
 					font-size: 20px;
 					&:last-child {
 						margin-bottom: 140px;
+					}
+					&:first-child {
+						margin-top: 30px;
 					}
 				}
 			}

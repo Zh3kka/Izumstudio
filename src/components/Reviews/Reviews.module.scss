@@ -1,7 +1,7 @@
 @import '../../scss/variables';
 
 .container {
-	background-color: rgba(34, 34, 34, 0.03);
+	background-color: $pink;
 	padding: 15px;
 	text-align: center;
 	position: relative;
@@ -13,7 +13,7 @@
 		color: $black;
 		> span {
 			font-size: 46px;
-			color: $pink;
+			color: $white;
 			margin-right: 10px;
 		}
 	}
@@ -26,12 +26,44 @@
 		gap: 100px;
 		z-index: 2;
 		.videoReview {
-			width: 500px;
+			width: 650px;
 			z-index: 2;
 		}
 		.picReview {
-			width: 500px;
+			width: 680px;
 			z-index: 2;
+			> .carusel {
+				.images {
+					color: $white;
+					> p {
+						font-size: 18px;
+					}
+					.star_date {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 15px;
+						> .stars {
+							display: inline-flex;
+							gap: 4px;
+						}
+						> span {
+							font-size: 16px;
+						}
+					}
+					> h2 {
+						margin-bottom: 30px;
+					}
+				}
+			}
+			> a {
+				color: $white;
+				text-decoration: none;
+				font-size: 18px;
+				&:hover {
+					color: $black;
+				}
+			}
 		}
 	}
 }
@@ -78,6 +110,16 @@ button {
 	}
 }
 
+@media screen and (max-width: 683px) {
+	.container {
+		.reviews {
+			.videoReview {
+				width: 500px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 426px) {
 	.container {
 		> h1 {
@@ -87,6 +129,7 @@ button {
 			}
 		}
 		.reviews {
+			gap: 100px;
 			.videoReview,
 			.picReview {
 				width: 300px;

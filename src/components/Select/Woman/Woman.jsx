@@ -24,7 +24,7 @@ const Woman = () => {
 						<a
 							href='https://n177562.yclients.com/group:147144/city:2#1'
 							target='_blank'
-							rel='noreferrer'
+							rel='noopener noreferrer'
 						>
 							<button className={styles.primary}>записаться</button>
 						</a>
@@ -54,7 +54,7 @@ const Woman = () => {
 								<a
 									href='https://o420.yclients.com/loyalty/subscription/406167'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -70,7 +70,8 @@ const Woman = () => {
 							/>
 							<h2>
 								Абонемент
-								<br />5 процедур
+								<br />
+								10 процедур
 							</h2>
 							<div className={styles.subNaming}>
 								<p>20 000&#8381;</p>
@@ -78,7 +79,7 @@ const Woman = () => {
 								<a
 									href='https://o420.yclients.com/loyalty/subscription/406167'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -97,12 +98,12 @@ const Woman = () => {
 							в подарок <br /> <span>(линия живота, губа, ареолы, пальцы)</span>
 						</p>
 						<h2>Разовый визит</h2>
-						<p>2000&#8381;</p>
-						<span>3000&#8381;</span>
+						<p>3000&#8381;</p>
+						<span>4000&#8381;</span>
 						<a
 							href='https://n177562.yclients.com/group:147144/city:2#1'
 							target='_blank'
-							rel='noreferrer'
+							rel='noopener noreferrer'
 						>
 							<button className={styles.primary}>записаться</button>
 						</a>
@@ -126,12 +127,12 @@ const Woman = () => {
 								<br />5 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>10 000 &#8381;</p>
-								<span>15 000&#8381;</span>
+								<p>15 000 &#8381;</p>
+								<span>20 000&#8381;</span>
 								<a
-									href='https://o420.yclients.com/loyalty/subscription/406167'
+									href='https://o420.yclients.com/loyalty/subscription/405179'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -147,15 +148,16 @@ const Woman = () => {
 							/>
 							<h2>
 								Абонемент
-								<br />5 процедур
+								<br />
+								10 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>20 000&#8381;</p>
-								<span>30 000&#8381;</span>
+								<p>30 000&#8381;</p>
+								<span>40 000&#8381;</span>
 								<a
-									href='https://o420.yclients.com/loyalty/subscription/406167'
+									href='https://o420.yclients.com/loyalty/subscription/405181'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -175,12 +177,12 @@ const Woman = () => {
 							<span>(линия живота, губа, ареолы, пальцы)</span>
 						</p>
 						<h2>Разовый визит</h2>
-						<p>2000&#8381;</p>
-						<span>3000&#8381;</span>
+						<p>4000&#8381;</p>
+						<span>5000&#8381;</span>
 						<a
 							href='https://n177562.yclients.com/group:147144/city:2#1'
 							target='_blank'
-							rel='noreferrer'
+							rel='noopener noreferrer'
 						>
 							<button className={styles.primary}>записаться</button>
 						</a>
@@ -204,12 +206,12 @@ const Woman = () => {
 								<br />5 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>10 000 &#8381;</p>
-								<span>15 000&#8381;</span>
+								<p>20 000 &#8381;</p>
+								<span>25 000&#8381;</span>
 								<a
-									href='https://o420.yclients.com/loyalty/subscription/406167'
+									href='https://o420.yclients.com/loyalty/subscription/405136'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -225,15 +227,16 @@ const Woman = () => {
 							/>
 							<h2>
 								Абонемент
-								<br />5 процедур
+								<br />
+								10 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>20 000&#8381;</p>
-								<span>30 000&#8381;</span>
+								<p>40 000&#8381;</p>
+								<span>50 000&#8381;</span>
 								<a
-									href='https://o420.yclients.com/loyalty/subscription/406167'
+									href='https://o420.yclients.com/loyalty/subscription/403458'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -253,12 +256,12 @@ const Woman = () => {
 							<span>(линия живота, губа, ареолы, пальцы)</span>
 						</p>
 						<h2>Разовый визит</h2>
-						<p>2000&#8381;</p>
-						<span>3000&#8381;</span>
+						<p>5000&#8381;</p>
+						<span>6000&#8381;</span>
 						<a
 							href='https://n177562.yclients.com/group:147144/city:2#1'
 							target='_blank'
-							rel='noreferrer'
+							rel='noopener noreferrer'
 						>
 							<button className={styles.primary}>записаться</button>
 						</a>
@@ -282,12 +285,12 @@ const Woman = () => {
 								<br />5 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>10 000 &#8381;</p>
-								<span>15 000&#8381;</span>
+								<p>25 000 &#8381;</p>
+								<span>30 000&#8381;</span>
 								<a
-									href='https://o420.yclients.com/loyalty/subscription/406167'
+									href='https://o420.yclients.com/loyalty/subscription/405134'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -303,15 +306,16 @@ const Woman = () => {
 							/>
 							<h2>
 								Абонемент
-								<br />5 процедур
+								<br />
+								10 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>20 000&#8381;</p>
-								<span>30 000&#8381;</span>
+								<p>50 000&#8381;</p>
+								<span>60 000&#8381;</span>
 								<a
-									href='https://o420.yclients.com/loyalty/subscription/406167'
+									href='https://o420.yclients.com/loyalty/subscription/403457'
 									target='_blank'
-									rel='noreferrer'
+									rel='noopener noreferrer'
 								>
 									купить
 								</a>
@@ -327,12 +331,12 @@ const Woman = () => {
 					<div className={styles.naming}>
 						<p>Абсолютно всё</p>
 						<h2>Разовый визит</h2>
-						<p>2000&#8381;</p>
-						<span>3000&#8381;</span>
+						<p>6000&#8381;</p>
+						<span>7000&#8381;</span>
 						<a
 							href='https://n177562.yclients.com/group:147144/city:2#1'
 							target='_blank'
-							rel='noreferrer'
+							rel='noopener noreferrer'
 						>
 							<button className={styles.primary}>записаться</button>
 						</a>
@@ -356,9 +360,15 @@ const Woman = () => {
 								<br />5 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>10 000 &#8381;</p>
-								<span>15 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<p>30 000 &#8381;</p>
+								<span>40 000&#8381;</span>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/405148'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Купить
+								</a>
 							</div>
 						</div>
 						<div className={styles.subImage}>
@@ -371,12 +381,19 @@ const Woman = () => {
 							/>
 							<h2>
 								Абонемент
-								<br />5 процедур
+								<br />
+								10 процедур
 							</h2>
 							<div className={styles.subNaming}>
-								<p>20 000&#8381;</p>
-								<span>30 000&#8381;</span>
-								<a href='/'>Купить</a>
+								<p>60 000&#8381;</p>
+								<span>70 000&#8381;</span>
+								<a
+									href='https://o420.yclients.com/loyalty/subscription/403463'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Купить
+								</a>
 							</div>
 						</div>
 					</div>
