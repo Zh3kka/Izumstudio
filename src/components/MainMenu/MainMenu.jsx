@@ -15,6 +15,7 @@ const MainMenu = () => {
 					smooth={true}
 					duration={300}
 					activeClass={styles.active}
+					href='/'
 				>
 					<img src={logo} alt='Логотип izumstudios' width={110} height={65} />
 				</Link>
@@ -26,83 +27,91 @@ const MainMenu = () => {
 							spy={true}
 							smooth={true}
 							duration={300}
+							href='/'
 						>
 							Главная
 						</Link>
 					</li>
 					<li>
 						<Link
+							activeClass={styles.active}
 							to='About'
 							spy={true}
 							smooth={true}
 							duration={300}
-							activeClass={styles.active}
+							href='/'
 						>
 							О сети #IZUM
 						</Link>
 					</li>
 					<li>
 						<Link
+							activeClass={styles.active}
+							href='/'
 							to='Apparat'
 							spy={true}
 							smooth={true}
 							duration={300}
-							activeClass={styles.active}
 						>
 							Мощный аппарат
 						</Link>
 					</li>
 					<li>
 						<Link
+							activeClass={styles.active}
+							href='/'
 							to='Masters'
 							spy={true}
 							smooth={true}
 							duration={300}
-							activeClass={styles.active}
 						>
 							Наши специалисты
 						</Link>
 					</li>
 					<li>
 						<Link
+							activeClass={styles.active}
+							href='/'
 							to='Reviews'
 							spy={true}
 							smooth={true}
 							duration={300}
-							activeClass={styles.active}
 						>
 							Отзывы
 						</Link>
 					</li>
 					<li>
 						<Link
+							activeClass={styles.active}
+							href='/'
 							to='Price'
 							spy={true}
 							smooth={true}
 							duration={300}
-							activeClass={styles.active}
 						>
 							Цены
 						</Link>
 					</li>
 					<li>
 						<Link
+							activeClass={styles.active}
+							href='/'
 							to='Price'
 							spy={true}
 							smooth={true}
 							duration={300}
-							activeClass={styles.active}
 						>
 							Абонементы
 						</Link>
 					</li>
 					<li>
 						<Link
+							activeClass={styles.active}
+							href='/'
 							to='Contacts'
 							spy={true}
 							smooth={true}
 							duration={300}
-							activeClass={styles.active}
 						>
 							Контакты
 						</Link>
@@ -110,9 +119,9 @@ const MainMenu = () => {
 				</ul>
 			</nav>
 			<div className={styles.icon} onClick={() => setNav(!nav)}>
-				{!nav ? <HiOutlineX size={30} /> : <HiMenu size={30} />}
+				{nav ? <HiOutlineX size={30} /> : <HiMenu size={30} />}
 			</div>
-			<div className={!nav ? styles.popup : styles.none}>
+			<div className={nav ? styles.popup : styles.none}>
 				<ul>
 					<li>
 						<Link

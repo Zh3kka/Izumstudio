@@ -26,6 +26,7 @@ const Footer = () => {
 							<li>
 								<Link
 									activeClass={styles.active}
+									href='/'
 									to='Top'
 									spy={true}
 									smooth={true}
@@ -36,77 +37,84 @@ const Footer = () => {
 							</li>
 							<li>
 								<Link
+									activeClass={styles.active}
+									href='/'
 									to='About'
 									spy={true}
 									smooth={true}
 									duration={300}
-									activeClass={styles.active}
 								>
 									О сети #IZUM
 								</Link>
 							</li>
 							<li>
 								<Link
+									activeClass={styles.active}
+									href='/'
 									to='Apparat'
 									spy={true}
 									smooth={true}
 									duration={300}
-									activeClass={styles.active}
 								>
 									Мощный аппарат
 								</Link>
 							</li>
 							<li>
 								<Link
+									activeClass={styles.active}
+									href='/'
 									to='Masters'
 									spy={true}
 									smooth={true}
 									duration={300}
-									activeClass={styles.active}
 								>
 									Наши специалисты
 								</Link>
 							</li>
 							<li>
 								<Link
+									activeClass={styles.active}
+									href='/'
 									to='Reviews'
 									spy={true}
 									smooth={true}
 									duration={300}
-									activeClass={styles.active}
 								>
 									Отзывы
 								</Link>
 							</li>
 							<li>
 								<Link
+									activeClass={styles.active}
+									href='/'
 									to='Price'
 									spy={true}
 									smooth={true}
 									duration={300}
-									activeClass={styles.active}
 								>
 									Цены
 								</Link>
 							</li>
 							<li>
 								<Link
+									activeClass={styles.active}
+									href='/'
 									to='Price'
 									spy={true}
 									smooth={true}
 									duration={300}
-									activeClass={styles.active}
 								>
 									Абонементы
 								</Link>
 							</li>
 							<li>
 								<Link
+									activeClass={styles.active}
+									href='/'
 									to='Contacts'
 									spy={true}
 									smooth={true}
 									duration={300}
-									activeClass={styles.active}
 								>
 									Контакты
 								</Link>
