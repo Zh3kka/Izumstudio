@@ -12,9 +12,9 @@ const Woman = () => {
 		<div className={styles.container}>
 			<h2>Комплекс 2 зоны</h2>
 			<div className={styles.complex}>
-				<img src={woman1} alt='комплекс 1' width={429} height={410} />
-				<div className={styles.description}>
-					<div className={styles.naming}>
+				<div className={styles.naming}>
+					<img src={woman1} alt='комплекс 1' width={429} height={410} />
+					<div className={styles.info}>
 						<p>
 							Подмышки <br /> Бикини тотальное
 						</p>
@@ -29,6 +29,8 @@ const Woman = () => {
 							<button className={styles.primary}>записаться</button>
 						</a>
 					</div>
+				</div>
+				<div className={styles.description}>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
 						<p>
@@ -90,9 +92,9 @@ const Woman = () => {
 			</div>
 			<h2>Комплекс 3 зоны</h2>
 			<div className={styles.complex}>
-				<img src={woman2} alt='комплекс 1' width={429} height={410} />
-				<div className={styles.description}>
-					<div className={styles.naming}>
+				<div className={styles.naming}>
+					<img src={woman2} alt='комплекс 1' width={429} height={410} />
+					<div className={styles.info}>
 						<p>
 							Подмышки <br /> Бикини тотальное <br /> Голени <br /> 1 малая зона
 							в подарок <br /> <span>(линия живота, губа, ареолы, пальцы)</span>
@@ -108,6 +110,8 @@ const Woman = () => {
 							<button className={styles.primary}>записаться</button>
 						</a>
 					</div>
+				</div>
+				<div className={styles.description}>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
 						<p>
@@ -168,9 +172,9 @@ const Woman = () => {
 			</div>
 			<h2>Комплекс 5 зон</h2>
 			<div className={styles.complex}>
-				<img src={woman3} alt='комплекс 1' width={429} height={410} />
-				<div className={styles.description}>
-					<div className={styles.naming}>
+				<div className={styles.naming}>
+					<img src={woman3} alt='комплекс 1' width={429} height={410} />
+					<div className={styles.info}>
 						<p>
 							Подмышки <br /> Бикини тотальное <br /> Ноги полностью <br /> 2
 							малая зона в подарок <br />{' '}
@@ -187,6 +191,8 @@ const Woman = () => {
 							<button className={styles.primary}>записаться</button>
 						</a>
 					</div>
+				</div>
+				<div className={styles.description}>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
 						<p>
@@ -247,9 +253,9 @@ const Woman = () => {
 			</div>
 			<h2>Комплекс Всё тело</h2>
 			<div className={styles.complex}>
-				<img src={woman4} alt='комплекс 1' width={429} height={410} />
-				<div className={styles.description}>
-					<div className={styles.naming}>
+				<div className={styles.naming}>
+					<img src={woman4} alt='комплекс 1' width={429} height={410} />
+					<div className={styles.info}>
 						<p>
 							Подмышки <br /> Бикини тотальное <br /> Ноги полностью <br /> Руки
 							полностью <br /> 3 малая зона в подарок <br />{' '}
@@ -266,6 +272,8 @@ const Woman = () => {
 							<button className={styles.primary}>записаться</button>
 						</a>
 					</div>
+				</div>
+				<div className={styles.description}>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
 						<p>
@@ -326,9 +334,9 @@ const Woman = () => {
 			</div>
 			<h2>Комплекс Абсолютно всё</h2>
 			<div className={styles.complex}>
-				<img src={woman5} alt='комплекс 1' />
-				<div className={styles.description}>
-					<div className={styles.naming}>
+				<div className={styles.naming}>
+					<img src={woman5} alt='комплекс 1' width={429} height={410} />
+					<div className={styles.info}>
 						<p>Абсолютно всё</p>
 						<h2>Разовый визит</h2>
 						<p>6000&#8381;</p>
@@ -341,6 +349,8 @@ const Woman = () => {
 							<button className={styles.primary}>записаться</button>
 						</a>
 					</div>
+				</div>
+				<div className={styles.description}>
 					<div className={styles.subscription}>
 						<h2>Рекомендуемые абонементы</h2>
 						<p>

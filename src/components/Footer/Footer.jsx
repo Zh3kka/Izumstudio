@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Footer.module.scss'
 import { Link } from 'react-scroll'
-import FooterLogo from '../../img/logo.webp'
+import FooterLogo from '../../img/footerlogo.webp'
 import insta from '../../img/insta.svg'
 import whatsapp from '../../img/whatsapp.svg'
 
@@ -12,8 +12,8 @@ const Footer = () => {
 				<div className={styles.footer__info}>
 					<img src={FooterLogo} width={120} height={75} alt='футер лого' />
 					<div className={styles.social}>
-						<img src={insta} width={25} height={25} alt='инстаграмм' />
-						<img src={whatsapp} width={25} height={25} alt='инстаграмм' />
+						<img src={insta} width={24} height={24} alt='инстаграмм' />
+						<img src={whatsapp} width={24} height={24} alt='инстаграмм' />
 					</div>
 					<p>
 						<a href='tel:+74952605751'>8 (495) 260-57-51</a>

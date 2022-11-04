@@ -32,7 +32,6 @@ function App() {
 			<BenefitFour />
 			<BenefitFive />
 			<Tasks />
-			<Gallery />
 			<Masters />
 			<Reviews />
 			<Select />

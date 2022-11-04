@@ -54,3 +54,14 @@
 		}
 	}
 }
+
+@media screen and (max-width: 290px) {
+	.container {
+		.images {
+			> img {
+				width: 261px;
+				height: 225px;
+			}
+		}
+	}
+}
