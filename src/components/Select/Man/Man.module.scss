@@ -15,9 +15,6 @@
 	.complex {
 		padding: 20px 0px;
 		border-radius: 15px;
-		-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-		-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -27,23 +24,31 @@
 		.naming {
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
 			gap: 50px;
-			> img {
-				width: 380px;
-				height: 450px;
-			}
 			> .info {
 				display: flex;
 				flex-direction: column;
-				> p {
+				flex-wrap: wrap;
+				> h5 {
+					line-height: 1.3em;
+					text-align: start;
+					white-space: pre-line;
 					font-size: 22px;
 					font-weight: bold;
 					> span {
+						white-space: pre-line;
 						font-weight: 400;
 						font-size: 18px;
 					}
 				}
+				> p {
+					white-space: pre-line;
+					font-size: 22px;
+					font-weight: bold;
+				}
 				> span {
+					font-size: 20px;
 					text-decoration: line-through;
 					color: grey;
 				}
@@ -51,8 +56,11 @@
 					max-width: 230px;
 				}
 			}
+			> img {
+				width: 377px;
+				height: 447px;
+			}
 		}
-
 		.description {
 			display: flex;
 			align-items: center;
@@ -119,11 +127,22 @@
 	}
 }
 
+@media screen and (max-width: 872px) {
+	.container {
+		.complex {
+			.naming {
+				justify-content: center;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 769px) {
 	.container {
 		.complex {
 			.naming {
-				flex-direction: column;
+				align-items: center;
+				justify-content: center;
 			}
 			.description {
 				flex-wrap: wrap;
@@ -137,10 +156,11 @@
 @media screen and (max-width: 521px) {
 	.container {
 		.complex {
-			> .naming {
+			.naming {
+				justify-content: center;
 				> img {
 					width: 318px;
-					height: 340px;
+					height: 360px;
 				}
 			}
 			.description {
@@ -153,13 +173,13 @@
 						flex-wrap: wrap;
 						> h2 {
 							bottom: 0px;
-							top: 36px;
-							left: 10px;
+							top: 20px;
+							left: 19px;
 							font-size: 18px;
 						}
 						> img {
-							width: 200px;
-							height: 106px;
+							width: 180px;
+							height: 86px;
 						}
 						.subNaming {
 							> p {
@@ -179,30 +199,14 @@
 	}
 }
 
-@media screen and (max-width: 345px) {
-	.container {
-		.complex {
-			.description {
-				.subscription {
-					.subImage {
-						gap: 15px;
-						> h2 {
-							left: 29px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
 @media screen and (max-width: 376px) {
 	.container {
 		.complex {
 			.naming {
+				justify-content: center;
 				> img {
 					width: 300px;
-					height: 310px;
+					height: 330px;
 				}
 			}
 			.description {
@@ -233,6 +237,23 @@
 	}
 }
 
+@media screen and (max-width: 345px) {
+	.container {
+		.complex {
+			.description {
+				.subscription {
+					.subImage {
+						gap: 15px;
+						> h2 {
+							left: 29px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 321px) {
 	.container {
 		> h2 {
@@ -240,9 +261,10 @@
 		}
 		.complex {
 			.naming {
+				justify-content: center;
 				> img {
-					width: 230px;
-					height: 300px;
+					width: 260px;
+					height: 270px;
 				}
 				> p {
 					font-size: 20px;
@@ -265,6 +287,17 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.container {
+		padding: 10px;
+		.complex {
+			.naming {
+				justify-content: center;
 			}
 		}
 	}
