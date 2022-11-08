@@ -52,7 +52,7 @@ const masters = [
 const Masters = () => {
 	return (
 		<div className={styles.cardGroup} id='Masters'>
-			<h2>Косметологи с мед образованием и опытом более 3х лет</h2>
+			<h2>Косметологи с медицинским образованием и опытом более 3х лет</h2>
 			<div className={styles.masters}>
 				{masters.map(master => {
 					return (

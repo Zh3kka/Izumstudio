@@ -7,6 +7,9 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 30px;
+	> h2 {
+		font-weight: 600;
+	}
 	.masters {
 		display: flex;
 		align-items: center;
@@ -51,18 +54,27 @@
 		text-align: center;
 		.card {
 			> img {
-				width: 280px;
-				height: 280px;
+				width: 80%;
+				height: auto;
 			}
 		}
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.container {
-		.cardGroup {
+	.cardGroup {
+		padding: 10px;
+		.card {
+			padding: 0px;
+		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.cardGroup {
+		.masters {
 			.card {
-				padding: 0px;
+				width: 80%;
 			}
 		}
 	}
@@ -71,14 +83,14 @@
 @media screen and (max-width: 376px) {
 	.cardGroup {
 		.card {
-			width: auto;
+			width: 80%;
 			height: auto;
 			> img {
-				width: 230px;
-				height: 230px;
+				width: 100%;
+				height: auto;
 			}
 			> h2 {
-				font-size: 22px;
+				font-size: 18px;
 			}
 			> p {
 				font-size: 16px;
