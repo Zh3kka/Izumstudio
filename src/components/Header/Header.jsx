@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Header.module.scss'
+import youtube from '../../img/youtube.svg'
 
 const Header = () => {
 	return (
@@ -22,9 +23,11 @@ const Header = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<button className={styles.secondary}>
-							Познакомиться с #Izum за 40 секунд
-						</button>
+						<img src={youtube} alt='Лого ютуба' width={70} height={70} />
+						<p>
+							Познакомиться с #IZUM <br />
+							за 40 секунд
+						</p>
 					</a>
 				</div>
 			</div>

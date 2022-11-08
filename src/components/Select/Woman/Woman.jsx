@@ -11,7 +11,7 @@ const womansComplex = [
 		present: '',
 		price: 2000,
 		oldPrice: 3000,
-		link: 'https://n177562.yclients.com/group:147144/city:2#1',
+		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
 		onePrice: 2000,
 		abonentPrice5Procedure: '10 000',
 		oldAbonentPrice5Procedure: '15 000',
@@ -28,7 +28,7 @@ const womansComplex = [
 		present: '(линия живота, губа, ареолы, пальцы)',
 		price: 3000,
 		oldPrice: 4000,
-		link: 'https://n177562.yclients.com/group:147144/city:2#1',
+		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
 		onePrice: 3000,
 		abonentPrice5Procedure: '15 000',
 		oldAbonentPrice5Procedure: '20 000',
@@ -45,7 +45,7 @@ const womansComplex = [
 		present: '(линия живота, губа, ареолы, пальцы)',
 		price: 4000,
 		oldPrice: 5000,
-		link: 'https://n177562.yclients.com/group:147144/city:2#1',
+		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
 		onePrice: 4000,
 		abonentPrice5Procedure: '20 000',
 		oldAbonentPrice5Procedure: '25 000',
@@ -62,7 +62,7 @@ const womansComplex = [
 		present: '(линия живота, губа, ареолы, пальцы)',
 		price: 5000,
 		oldPrice: 6000,
-		link: 'https://n177562.yclients.com/group:147144/city:2#1',
+		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
 		onePrice: 5000,
 		abonentPrice5Procedure: '25 000',
 		oldAbonentPrice5Procedure: '30 000',
@@ -79,7 +79,7 @@ const womansComplex = [
 		present: '',
 		price: 6000,
 		oldPrice: 7000,
-		link: 'https://n177562.yclients.com/group:147144/city:2#1',
+		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
 		onePrice: 6000,
 		abonentPrice5Procedure: '30 000',
 		oldAbonentPrice5Procedure: '40 000',
@@ -99,12 +99,7 @@ const Woman = () => {
 						<h2>{woman.complex}</h2>
 						<div className={styles.complex}>
 							<div className={styles.naming}>
-								<img
-									src={woman.imagePath}
-									alt='комплекс 1'
-									width={429}
-									height={410}
-								/>
+								<img src={woman.imagePath} alt={woman.namingComplex} />
 								<div className={styles.info}>
 									<h5>
 										{woman.namingComplex} <span>{woman.present}</span>{' '}

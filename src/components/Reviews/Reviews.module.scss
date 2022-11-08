@@ -178,11 +178,12 @@ button {
 
 @media screen and (max-width: 512px) {
 	.container {
+		// padding: 50px 0 614px 0;
 		.reviews {
 			.picReview {
 				.yandex__rev {
 					width: 337px;
-					height: 600px;
+					height: 886px;
 				}
 			}
 		}
@@ -191,7 +192,7 @@ button {
 
 @media screen and (max-width: 426px) {
 	.container {
-		padding: 50px 0 310px 0;
+		padding: 50px 0 614px 0;
 		> h1 {
 			font-size: 22px;
 			> span {

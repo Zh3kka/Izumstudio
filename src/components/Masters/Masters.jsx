@@ -52,16 +52,24 @@ const masters = [
 const Masters = () => {
 	return (
 		<div className={styles.cardGroup} id='Masters'>
-			{masters.map(master => {
-				return (
-					<div className={styles.card} key={master.id}>
-						<img src={master.image} alt={master.alt} width={360} height={360} />
-						<h2 className={styles.cardTitle}>{master.nameMaster}</h2>
-						<span>{master.location}</span>
-						<p>{master.description}</p>
-					</div>
-				)
-			})}
+			<h2>Косметологи с мед образованием и опытом более 3х лет</h2>
+			<div className={styles.masters}>
+				{masters.map(master => {
+					return (
+						<div className={styles.card} key={master.id}>
+							<img
+								src={master.image}
+								alt={master.alt}
+								width={360}
+								height={360}
+							/>
+							<h2 className={styles.cardTitle}>{master.nameMaster}</h2>
+							<span>{master.location}</span>
+							<p>{master.description}</p>
+						</div>
+					)
+				})}
+			</div>
 		</div>
 	)
 }

@@ -1,32 +1,92 @@
 @import '../../scss/variables';
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	.menu {
+.header__menu {
+	&_item {
 		> ul {
 			display: flex;
-			justify-content: space-between;
 			list-style-type: none;
+			gap: 150px;
+			align-items: center;
+			justify-content: center;
 			> li {
-				color: $black;
-				font-size: 16px;
-				font-weight: 600;
-				font-family: sans-serif;
-				a {
-					text-decoration: none;
-					color: $black;
+				font-size: 20px;
+				font-weight: 500;
+				> a {
 					display: flex;
 					align-items: center;
+					justify-content: center;
 					gap: 10px;
+					text-decoration: none;
+					&:hover {
+						color: $black;
+					}
 				}
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 1024px) {
-	.container {
+@media screen and (max-width: 900px) {
+	.header__menu {
+		&_item {
+			> ul {
+				margin-top: 16px;
+				li {
+					font-size: 16px;
+					> a {
+						> img {
+							width: 14px;
+							height: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+	.header__menu {
+		&_item {
+			> ul {
+				gap: 80px;
+				margin-top: 16px;
+				li {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 588px) {
+	.header__menu {
+		&_item {
+			> ul {
+				gap: 40px;
+				margin-top: 16px;
+				li {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 516px) {
+	.header__menu {
 		display: none;
+	}
+}
+@media screen and (max-width: 588px) {
+	.header__menu {
+		&_item {
+			> ul {
+				gap: 40px;
+				margin-top: 16px;
+				li {
+					font-size: 14px;
+				}
+			}
+		}
 	}
 }

@@ -10,29 +10,32 @@
 	z-index: 10;
 	> nav {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
-		> img {
-			cursor: pointer;
-		}
-		ul {
-			margin: 30px 0;
+		padding: 0 20px;
+		> .mainMenu {
 			display: flex;
-			justify-content: center;
 			align-items: center;
-			list-style-type: none;
-			gap: 20px;
-			li {
+			> img {
 				cursor: pointer;
-				color: $black;
-				font-size: 16px;
-				font-weight: 600;
-				font-family: sans-serif;
-				text-decoration: none;
-				transition: all 0.3s ease;
-				&:hover {
-					color: $pink;
+			}
+			> ul {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				list-style-type: none;
+				gap: 30px;
+				li {
+					cursor: pointer;
+					color: $black;
+					font-size: 16px;
+					font-weight: 600;
+					font-family: sans-serif;
 					text-decoration: none;
+					transition: all 0.3s ease;
+					&:hover {
+						color: $pink;
+						text-decoration: none;
+					}
 				}
 			}
 		}
@@ -66,11 +69,17 @@ a {
 	right: -100%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1237px) {
 	.container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		> nav {
+			padding: 0;
+			.mainMenu {
+				display: none;
+			}
+		}
 		.icon {
 			display: block;
 			transition: all 0.2s ease;
@@ -108,8 +117,8 @@ a {
 		> nav {
 			> a {
 				> img {
-					width: 100px;
-					height: 60px;
+					width: 125px;
+					height: 73px;
 				}
 			}
 			> ul {

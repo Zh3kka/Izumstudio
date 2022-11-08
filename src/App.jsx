@@ -1,8 +1,7 @@
 import styles from './scss/app.scss'
-import HeaderMenu from './components/HeaderMenu/HeaderMenu'
 import MainMenu from './components/MainMenu/MainMenu'
+import HeaderMenu from './components/HeaderMenu/HeaderMenu'
 import Header from './components/Header/Header'
-import HeaderTitle from './components/HeaderTitle/HeaderTitle'
 import BestStudio from './components/BestStudio/BestStudio'
 import BenefitOne from './components/BenefitOne/BenefitOne'
 import BenefitTwo from './components/BenefitTwo/BenefitTwo'
@@ -14,7 +13,7 @@ import Masters from './components/Masters/Masters'
 import Reviews from './components/Reviews/Reviews'
 import Select from './components/Select/Select'
 import Mission from './components/Mission/Mission'
-import { Contacts } from './components/Contacts/Contacts'
+import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
 			<MainMenu />
 			<HeaderMenu />
 			<Header />
-			<HeaderTitle />
 			<BestStudio />
 			<BenefitOne />
 			<BenefitTwo />

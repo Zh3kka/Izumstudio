@@ -139,6 +139,17 @@
 @media screen and (max-width: 376px) {
 	.container {
 		.information {
+			.adress {
+				> p {
+					font-size: 16px;
+				}
+			}
+			.leftInfo {
+				> a {
+					padding: 14px;
+					font-size: 14px;
+				}
+			}
 			.map {
 				> a {
 					> img {
@@ -159,6 +170,26 @@
 					> img {
 						width: 300px;
 						height: 230px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 310px) {
+	.container {
+		.information {
+			.leftInfo {
+				> a {
+					font-size: 16px;
+				}
+			}
+			.map {
+				> a {
+					> img {
+						width: 270px;
+						height: 214px;
 					}
 				}
 			}

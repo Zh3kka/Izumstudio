@@ -11,10 +11,10 @@ import purple from '../../img/purple.webp'
 import red from '../../img/red.webp'
 import yellow from '../../img/yellow.webp'
 
-export const Contacts = () => {
+const Contacts = () => {
 	return (
 		<div className={styles.container} id='Contacts'>
-			<h1>Контакты</h1>
+			<h1>Удобное расположение</h1>
 			<div className={styles.information}>
 				<div className={styles.leftInfo}>
 					<div className={styles.infoTitle}>
@@ -64,3 +64,5 @@ export const Contacts = () => {
 		</div>
 	)
 }
+
+export default Contacts
