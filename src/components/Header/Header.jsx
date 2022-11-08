@@ -23,7 +23,7 @@ const Header = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<img src={youtube} alt='Лого ютуба' width={70} height={70} />
+						<img src={youtube} alt='Лого ютуба' width={70} height={70} />{' '}
 						<p>
 							Познакомиться с #IZUM <br />
 							за 40 секунд
