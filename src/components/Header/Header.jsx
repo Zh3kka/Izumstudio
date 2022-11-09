@@ -13,6 +13,7 @@ const style = {
 	left: '50%',
 	transform: 'translate(-50%, -50%)',
 	width: '80%',
+	height: 'auto',
 	boxShadow: 20,
 }
 
@@ -55,7 +56,7 @@ const Header = () => {
 					>
 						<Fade in={open}>
 							<Box sx={style}>
-								<video width='100%' height='100%' controls>
+								<video width='100%' height='100%' controls autoPlay>
 									<source src={modalVideo} type='video/mp4' />
 									Your browser does not support the video tag.
 								</video>

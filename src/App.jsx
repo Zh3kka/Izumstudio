@@ -28,7 +28,6 @@ function App() {
 			<BenefitThree />
 			<BenefitFour />
 			<BenefitFive />
-			<Tasks />
 			<Masters />
 			<Reviews />
 			<Select />
