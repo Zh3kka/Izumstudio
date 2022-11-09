@@ -27,6 +27,12 @@
 	}
 }
 
+@media screen and (max-width: 421px) {
+	.container {
+		padding: 10px;
+	}
+}
+
 @media screen and (max-width: 353px) {
 	.container {
 		> h1 {
@@ -37,6 +43,7 @@
 
 @media screen and (max-width: 321px) {
 	.container {
+		padding: 10px;
 		> h1 {
 			font-size: 24px;
 		}

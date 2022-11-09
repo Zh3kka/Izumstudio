@@ -23,7 +23,7 @@
 				justify-content: space-between;
 				align-items: center;
 				list-style-type: none;
-				gap: 30px;
+				gap: 45px;
 				li {
 					cursor: pointer;
 					color: $black;
@@ -88,10 +88,10 @@ a {
 			margin-top: 70px;
 			display: block;
 			position: fixed;
-			top: -21px;
+			top: -2px;
 			right: 0;
 			background-color: $white;
-			padding: 0 10px;
+			padding: 0 35px;
 			z-index: 1090;
 			transition: all 0.15s ease-in-out;
 			> ul {
@@ -124,6 +124,22 @@ a {
 			> ul {
 				display: none;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 517px) {
+	.container {
+		.popup {
+			top: -3px;
+		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		.popup {
+			padding: 0px 15px;
 		}
 	}
 }
