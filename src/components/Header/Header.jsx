@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Header.module.scss'
+import modalVideo from '../../img/modal.mp4'
 import youtube from '../../img/youtube.svg'
 import Backdrop from '@mui/material/Backdrop'
 import Box from '@mui/material/Box'
@@ -55,10 +56,7 @@ const Header = () => {
 						<Fade in={open}>
 							<Box sx={style}>
 								<video width='100%' height='100%' controls>
-									<source
-										src='https://www.youtube.com/watch?v=IFsHjiOgPEM&feature=emb_logo'
-										type='video/mp4'
-									/>
+									<source src={modalVideo} type='video/mp4' />
 									Your browser does not support the video tag.
 								</video>
 							</Box>
