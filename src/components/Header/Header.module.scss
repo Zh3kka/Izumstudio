@@ -1,19 +1,26 @@
 @import '../../scss/variables';
 
-// BUTTONS
-.primary {
-	-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-	-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-	background-color: $pink;
-	color: $white;
-	transition: all 0.4s ease-in-out;
+.modal {
+	opacity: 1;
+}
+
+.secondary {
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 0px;
+	padding: 0 0;
+	display: flex;
+	margin: 0;
+	max-width: 700px;
+	align-items: center;
+	border: none;
+	> p {
+		margin-top: 10px;
+	}
 	&:hover {
-		background-color: $white;
-		color: $black;
+		border: none;
+		background-color: transparent;
 	}
 }
-// BUTTONS
 
 .bg {
 	background: url('../../img/bg.jpeg');
@@ -44,7 +51,7 @@
 			align-items: center;
 			max-width: 600px;
 			gap: 30px;
-			> button {
+			> button:first-child {
 				-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 				-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 				box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);

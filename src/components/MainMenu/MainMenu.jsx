@@ -50,6 +50,7 @@ const MainMenu = () => {
 				<Link
 					to='Top'
 					spy={true}
+					offset={30}
 					smooth={true}
 					duration={300}
 					activeClass={styles.active}
@@ -66,6 +67,7 @@ const MainMenu = () => {
 										key={item.id}
 										to={item.toLink}
 										spy={true}
+										offset={-40}
 										smooth={true}
 										duration={300}
 										activeClass={styles.active}

@@ -1,51 +1,26 @@
 @import '../../scss/variables';
 
 .container {
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
-	> h2 {
-		font-size: 42px;
-		font-weight: 600;
-	}
-	> ul {
-		gap: 18px;
+	padding-top: 100px;
+	.task__images {
 		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		list-style-type: none;
-		padding: 10px 0;
-		> li {
-			font-size: 20px;
-			img {
-				color: $pink;
-				width: 20px;
-				height: 25px;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 1100px) {
-	.container {
-		padding: 40px;
-		> h2 {
-			font-size: 36px;
-		}
-	}
-}
-
-@media screen and (max-width: 426px) {
-	.container {
-		> h2 {
-			font-size: 28px;
-		}
-		> ul {
-			> li {
-				font-size: 16px;
-				> img {
-					width: 18px;
-					height: 20px;
-				}
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		> h4 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 10px;
+			font-size: 22px;
+			> img {
+				border-radius: 15px;
+				width: 90%;
+				max-width: 400px;
+				height: 600px;
 			}
 		}
 	}
