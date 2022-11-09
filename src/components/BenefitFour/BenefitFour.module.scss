@@ -25,7 +25,8 @@
 		}
 	}
 	> img {
-		width: 400px;
+		max-width: 400px;
+		width: 80%;
 		height: 30%;
 		border-radius: 30px;
 	}
@@ -40,10 +41,6 @@
 				font-size: 32px;
 			}
 		}
-		> img {
-			width: 350px;
-			height: 350px;
-		}
 	}
 }
 
@@ -55,10 +52,6 @@
 
 @media screen and (max-width: 546px) {
 	.container {
-		> img {
-			width: 86%;
-			height: 86%;
-		}
 		.titles {
 			padding: 0 20px;
 			> h4 {
@@ -73,10 +66,6 @@
 
 @media screen and (max-width: 376px) {
 	.container {
-		> img {
-			width: 270px;
-			height: 270px;
-		}
 		.titles {
 			padding: 0 20px;
 			> h4 {

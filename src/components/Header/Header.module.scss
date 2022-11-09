@@ -120,9 +120,26 @@
 	.bg {
 		.container {
 			.buttons {
-				> button {
-					padding: 14px;
-					font-size: 14px;
+				> a {
+					> button {
+						padding: 14px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.bg {
+		.container {
+			.buttons {
+				> a {
+					> p {
+						margin-right: 0px;
+						font-size: 12px;
+					}
 				}
 			}
 		}
