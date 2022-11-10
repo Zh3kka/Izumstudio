@@ -11,11 +11,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const Reviews = () => {
 	return (
 		<div className={styles.container} id='Reviews'>
-			<h1>
-				<span>10 000</span>довольных клиентов выбрали #IZUM
-			</h1>
 			<div className={styles.reviews}>
 				<div className={styles.videoReview}>
+					<h1>
+						<span>10 000</span>довольных клиентов выбрали <span>#IZUM</span>
+					</h1>
 					<Carousel
 						className={styles.carusel}
 						showArrows={true}
