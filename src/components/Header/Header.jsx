@@ -56,7 +56,7 @@ const Header = () => {
 					>
 						<Fade in={open}>
 							<Box sx={style}>
-								<video width='100%' height='100%' controls autoPlay>
+								<video width='100%' height='100%' controls autoPlay muted>
 									<source src={modalVideo} type='video/mp4' />
 									Your browser does not support the video tag.
 								</video>

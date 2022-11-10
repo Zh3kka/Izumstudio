@@ -15,7 +15,11 @@
 	border: none;
 	> p {
 		color: $white;
-		margin-top: 10px;
+		padding: 10px 0px 0px 10px;
+		transition: color 0.3s ease;
+		&:hover {
+			color: $pink;
+		}
 	}
 	&:hover {
 		border: none;
@@ -24,7 +28,7 @@
 }
 
 .bg {
-	background: url('../../img/bg3.jpg');
+	background: url('../../img/modal.mp4');
 	background-position: center;
 	background-size: cover;
 	height: auto;

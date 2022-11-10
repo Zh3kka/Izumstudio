@@ -10,9 +10,9 @@ const HeaderMenu = () => {
 					<li>6 студий в Москве</li>
 					<li>Ежедневно с 10 до 22</li>
 					<li>
-						<a href='tel:+74952605751'>
+						<a href='tel:+74951506977'>
 							<img src={phone} alt='Телефон' width={16} height={16} />8 (495)
-							260-57-51
+							150-69-77
 						</a>
 					</li>
 				</ul>
