@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Header.module.scss'
+import bgVideo from '../../img/bgvideo.mp4'
 import modalVideo from '../../img/modal.mp4'
 import youtube from '../../img/youtube.svg'
 import Backdrop from '@mui/material/Backdrop'
@@ -23,6 +24,14 @@ const Header = () => {
 	const handleClose = () => setOpen(false)
 	return (
 		<div className={styles.bg} id='Top'>
+			<video
+				src={bgVideo}
+				className={styles.videoBg}
+				autoPlay
+				muted
+				loop
+				type='video/mp4'
+			/>
 			<div className={styles.container}>
 				<h1>
 					Избавьтесь от лишних волос пройдя курс{' '}

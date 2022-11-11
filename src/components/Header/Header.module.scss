@@ -14,12 +14,11 @@
 	align-items: center;
 	border: none;
 	> p {
-		text-align: left;
-		color: $white;
+		color: $black;
 		padding: 10px 0px 0px 10px;
 		transition: color 0.3s ease;
 		&:hover {
-			color: $pink;
+			color: $white;
 		}
 	}
 	&:hover {
@@ -29,16 +28,21 @@
 }
 
 .bg {
-	background: url('../../img/bg3.jpg');
-	background-position: center;
-	background-size: cover;
-	height: auto;
-	width: 100%;
+	> video {
+		height: 100vh;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		z-index: -1;
+	}
 	.container {
-		padding: 100px 0;
+		padding: 100px 0 0 0;
 		max-width: 1160px;
 		margin: 0 auto;
 		h1 {
+			z-index: 100;
 			letter-spacing: 1px;
 			max-width: 640px;
 			color: $white;
@@ -100,6 +104,14 @@
 
 @media screen and (max-width: 768px) {
 	.bg {
+		background: url('../../img/bgallbody.webp');
+		background-position: center;
+		background-size: cover;
+		height: auto;
+		width: 100%;
+		.videoBg {
+			display: none;
+		}
 		.container {
 			.buttons {
 				align-items: flex-start;

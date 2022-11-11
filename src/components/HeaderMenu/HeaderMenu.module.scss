@@ -1,6 +1,8 @@
 @import '../../scss/variables';
 
 .header__menu {
+	background-color: #ffffff;
+	padding-bottom: 10px;
 	&_item {
 		> ul {
 			display: flex;
