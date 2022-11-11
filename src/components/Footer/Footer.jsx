@@ -16,7 +16,7 @@ const Footer = () => {
 						<img src={whatsapp} width={24} height={24} alt='инстаграмм' />
 					</div>
 					<p>
-						<a href='tel:+74952605751'>8 (495) 260-57-51</a>
+						<a href='tel:+74951506977'>8 (495) 150-69-77</a>
 						<a href='mailto: izumstudios@mail.ru'>izumstudios@mail.ru</a>
 					</p>
 				</div>
