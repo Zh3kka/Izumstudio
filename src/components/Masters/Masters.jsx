@@ -5,7 +5,6 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import { CardActionArea } from '@mui/material'
 import Slider from 'react-slick'
 import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
 import 'slick-carousel/slick/slick.css'
@@ -113,25 +112,23 @@ const Masters = () => {
 					{masters.map(master => {
 						return (
 							<Card sx={{ maxWidth: 345 }} key={master.id}>
-								<CardActionArea>
-									<CardMedia
-										component='img'
-										height='80%'
-										image={master.image}
-										alt={master.alt}
-									/>
-									<CardContent>
-										<Typography gutterBottom variant='h4' component='div'>
-											{master.nameMaster}
-										</Typography>
-										<Typography gutterBottom variant='h5' component='div'>
-											{master.location}
-										</Typography>
-										<Typography variant='h5' color='text.secondary'>
-											{master.description}
-										</Typography>
-									</CardContent>
-								</CardActionArea>
+								<CardMedia
+									component='img'
+									height='80%'
+									image={master.image}
+									alt={master.alt}
+								/>
+								<CardContent>
+									<Typography gutterBottom variant='h5'>
+										{master.nameMaster}
+									</Typography>
+									<Typography gutterBottom variant='subtitle2'>
+										{master.location}
+									</Typography>
+									<Typography variant='body1' color='text.secondary'>
+										{master.description}
+									</Typography>
+								</CardContent>
 							</Card>
 						)
 					})}
