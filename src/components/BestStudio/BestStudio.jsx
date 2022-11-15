@@ -10,15 +10,22 @@ const BestStudio = () => {
 					Лучшая сеть студий лазерной эпиляции по версии премии AURORA AWARDS
 					2019 "Beauty&Health"
 				</h5>
+				<div className={styles.images}>
+					<img
+						src={project}
+						alt='Диплом премии AURORA AWARDS'
+						width={550}
+						height={450}
+					/>
+				</div>
 			</div>
-			<div className={styles.images}>
-				<img
-					src={project}
-					alt='Диплом премии AURORA AWARDS'
-					width={550}
-					height={450}
-				/>
-			</div>
+			<a
+				href='https://n177562.yclients.com/group:147144/city:2#1'
+				target='_blank'
+				rel='noopener noreferrer'
+			>
+				<button className={styles.primary}>записаться на процедуру</button>
+			</a>
 		</div>
 	)
 }

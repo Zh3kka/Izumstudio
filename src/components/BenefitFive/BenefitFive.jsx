@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './BenefitFive.module.scss'
 import five from '../../img/five.webp'
+import Button from '../UI/Button/Button'
 
 const BenefitFive = () => {
 	return (
@@ -16,6 +17,10 @@ const BenefitFive = () => {
 				</p>
 			</div>
 			<img src={five} alt='Первое преимущество' />
+			<Button
+				title='Заказать обратный звонок'
+				link='https://n177562.yclients.com/group:147144/city:2#1'
+			/>
 		</div>
 	)
 }

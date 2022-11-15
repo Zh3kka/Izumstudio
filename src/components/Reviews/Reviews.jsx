@@ -1,12 +1,27 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
 import styles from './Reviews.module.scss'
-import vid1 from '../../img/video/2.mp4'
-import vid2 from '../../img/video/video2.mp4'
-import vid3 from '../../img/video/video1.mp4'
-import vid4 from '../../img/video/video4.mp4'
+import Button from '../UI/Button/Button'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+
+const videoReview = [
+	{
+		id: 1,
+		videoPath: require('../../img/video/2.mp4'),
+	},
+	{
+		id: 2,
+		videoPath: require('../../img/video/video2.mp4'),
+	},
+	{
+		id: 3,
+		videoPath: require('../../img/video/video1.mp4'),
+	},
+	{
+		id: 4,
+		videoPath: require('../../img/video/video4.mp4'),
+	},
+]
 
 const Reviews = () => {
 	return (
@@ -25,18 +40,19 @@ const Reviews = () => {
 						autoPlay={false}
 						dynamicHeight={true}
 					>
-						<div className={styles.images}>
-							<ReactPlayer url={vid1} controls width='100%' />
-						</div>
-						<div className={styles.images}>
-							<ReactPlayer url={vid2} controls width='100%' />
-						</div>
-						<div className={styles.images}>
-							<ReactPlayer url={vid3} controls width='100%' />
-						</div>
-						<div className={styles.images}>
-							<ReactPlayer url={vid4} controls width='100%' />
-						</div>
+						{videoReview.map(item => {
+							return (
+								<div className={styles.images} key={item.id}>
+									<video
+										src={item.videoPath}
+										controls
+										width='100%'
+										height='400'
+										type='video/mp4'
+									/>
+								</div>
+							)
+						})}
 					</Carousel>
 				</div>
 
@@ -58,6 +74,10 @@ const Reviews = () => {
 					</div>
 				</div>
 			</div>
+			<Button
+				title='Хочу так же'
+				link='https://n177562.yclients.com/group:147144/city:2#1'
+			/>
 		</div>
 	)
 }

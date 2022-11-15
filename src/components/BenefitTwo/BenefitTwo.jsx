@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './BenefitTwo.module.scss'
 import two from '../../img/two.webp'
+import Button from '../UI/Button/Button'
 
 const BenefitTwo = () => {
 	return (
@@ -15,6 +16,10 @@ const BenefitTwo = () => {
 					импульса 10гц
 				</p>
 			</div>
+			<Button
+				title='Получить спецпредложение'
+				link='https://n177562.yclients.com/group:147144/city:2#1'
+			/>
 		</div>
 	)
 }

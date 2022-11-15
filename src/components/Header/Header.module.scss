@@ -29,7 +29,7 @@
 
 .bg {
 	> video {
-		height: 100vh;
+		height: 100%;
 		width: 100%;
 		position: absolute;
 		top: 0;
@@ -102,13 +102,21 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 901px) {
 	.bg {
 		background: url('../../img/bgallbody.webp');
 		background-position: center;
 		background-size: cover;
 		height: auto;
 		width: 100%;
+		> video {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 821px) {
+	.bg {
 		.videoBg {
 			display: none;
 		}
@@ -117,6 +125,15 @@
 				align-items: flex-start;
 				flex-direction: column;
 				gap: 0;
+			}
+		}
+	}
+	.secondary {
+		> p {
+			color: $white;
+			transition: color 0.3s ease;
+			&:hover {
+				color: $pink;
 			}
 		}
 	}
@@ -156,6 +173,12 @@
 }
 
 @media screen and (max-width: 321px) {
+	.secondary {
+		> p {
+			max-width: 126px;
+			text-align: left;
+		}
+	}
 	.bg {
 		.container {
 			.buttons {

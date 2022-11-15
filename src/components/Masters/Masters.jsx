@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Masters.module.scss'
+import Button from '../UI/Button/Button'
 
 const masters = [
 	{
@@ -70,6 +71,10 @@ const Masters = () => {
 					)
 				})}
 			</div>
+			<Button
+				title='Выбрать мастера'
+				link='https://n177562.yclients.com/group:147144/city:2#1'
+			/>
 		</div>
 	)
 }

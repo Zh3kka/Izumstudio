@@ -2,7 +2,7 @@
 
 .container {
 	max-width: 100vw;
-	padding: 0px 30px;
+	padding: 10px 30px;
 	margin: 0 auto;
 	position: sticky;
 	top: 0;
@@ -131,7 +131,7 @@ a {
 @media screen and (max-width: 517px) {
 	.container {
 		.popup {
-			top: -3px;
+			top: 13px;
 		}
 	}
 }
@@ -139,7 +139,16 @@ a {
 @media screen and (max-width: 426px) {
 	.container {
 		.popup {
+			width: 100%;
 			padding: 0px 15px;
+		}
+		> nav {
+			> a {
+				> img {
+					width: 100px;
+					height: 66px;
+				}
+			}
 		}
 	}
 }

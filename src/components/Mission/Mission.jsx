@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Mission.module.scss'
+import Button from '../UI/Button/Button'
 
 const Mission = () => {
 	return (
@@ -20,6 +21,10 @@ const Mission = () => {
 				</p>
 				<span>Рады видеть Вас в сети студий #IZUM.❤️</span>
 			</div>
+			<Button
+				title='Получить спецпредложение'
+				link='https://n177562.yclients.com/group:147144/city:2#1'
+			/>
 		</div>
 	)
 }
