@@ -1,11 +1,20 @@
 import React from 'react'
 import styles from './Masters.module.scss'
 import Button from '../UI/Button/Button'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import { CardActionArea } from '@mui/material'
+import Slider from 'react-slick'
+import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const masters = [
 	{
 		id: 1,
-		image: require('../../img/car1.jpg'),
+		image: require('../../img/masters/car1.webp'),
 		alt: 'master1',
 		nameMaster: 'Соловьева Анастасия',
 		location: 'м. Таганская',
@@ -14,7 +23,7 @@ const masters = [
 	},
 	{
 		id: 2,
-		image: require('../../img/car2.jpg'),
+		image: require('../../img/masters/car2.webp'),
 		alt: 'master2',
 		nameMaster: 'Супрунова Аксинья',
 		location: 'м. Павелецкая',
@@ -23,7 +32,7 @@ const masters = [
 	},
 	{
 		id: 3,
-		image: require('../../img/car3.jpeg'),
+		image: require('../../img/masters/car3.webp'),
 		alt: 'master3',
 		nameMaster: 'Антоненко Екатерина',
 		location: 'м. Новослободская',
@@ -32,16 +41,16 @@ const masters = [
 	},
 	{
 		id: 4,
-		image: require('../../img/car4.jpg'),
+		image: require('../../img/masters/car4.webp'),
 		alt: 'master4',
 		nameMaster: 'Ярахмедова Мадина',
-		location: 'м. павелецкая',
+		location: 'м. Павелецкая',
 		description:
 			'Косметолог-эстетист, специалист лазерной эпиляции. Окончила Московский медицинский колледж по специальности «Лечебное дело», фельдшер скорой и неотложной помощи. Освоила программу базовой подготовки «Эстетическая косметология». Опыт в аппаратной косметологии более 5 лет.',
 	},
 	{
 		id: 5,
-		image: require('../../img/car5.jpg'),
+		image: require('../../img/masters/car5.webp'),
 		alt: 'master5',
 		nameMaster: 'Нуманхонова Регина',
 		location: 'м. Новослободская',
@@ -49,27 +58,84 @@ const masters = [
 			'Работает в аппаратной косметологии более 7 лет. Называет себя перфекционистом и аккуратистом, поэтому доводит работу до идеального результата. Ее цель - стерильность, качество и быстрый результат. Работает на высоких мощностях, процедура проходит максимально быстро и под лёгкие беседы.',
 	},
 ]
+function SampleNextArrow(props) {
+	const { className, onClick } = props
+	return (
+		<div className={className} onClick={onClick}>
+			<BsArrowRight style={{ color: '#d10054', fontSize: '30px' }} />
+		</div>
+	)
+}
+
+function SamplePrevArrow(props) {
+	const { className, onClick } = props
+	return (
+		<div className={className} onClick={onClick} style={{ left: '-38px' }}>
+			<BsArrowLeft style={{ color: '#d10054', fontSize: '30px' }} />
+		</div>
+	)
+}
+
+const settings = {
+	dots: true,
+	infinite: true,
+	speed: 500,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	initialSlide: 0,
+	nextArrow: <SampleNextArrow />,
+	prevArrow: <SamplePrevArrow />,
+	responsive: [
+		{
+			breakpoint: 1336,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			},
+		},
+
+		{
+			breakpoint: 916,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+	],
+}
 
 const Masters = () => {
 	return (
 		<div className={styles.cardGroup} id='Masters'>
 			<h2>Косметологи с медицинским образованием и опытом более 3х лет</h2>
 			<div className={styles.masters}>
-				{masters.map(master => {
-					return (
-						<div className={styles.card} key={master.id}>
-							<img
-								src={master.image}
-								alt={master.alt}
-								width={360}
-								height={360}
-							/>
-							<h2 className={styles.cardTitle}>{master.nameMaster}</h2>
-							<span>{master.location}</span>
-							<p>{master.description}</p>
-						</div>
-					)
-				})}
+				<Slider {...settings}>
+					{masters.map(master => {
+						return (
+							<Card sx={{ maxWidth: 345 }} key={master.id}>
+								<CardActionArea>
+									<CardMedia
+										component='img'
+										height='80%'
+										image={master.image}
+										alt={master.alt}
+									/>
+									<CardContent>
+										<Typography gutterBottom variant='h4' component='div'>
+											{master.nameMaster}
+										</Typography>
+										<Typography gutterBottom variant='h5' component='div'>
+											{master.location}
+										</Typography>
+										<Typography variant='h5' color='text.secondary'>
+											{master.description}
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						)
+					})}
+				</Slider>
 			</div>
 			<Button
 				title='Выбрать мастера'
