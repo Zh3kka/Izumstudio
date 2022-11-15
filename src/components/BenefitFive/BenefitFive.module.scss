@@ -42,11 +42,13 @@
 @media screen and (max-width: 1100px) {
 	.container {
 		padding: 20px 10px;
-		flex-direction: column;
-		.titles {
-			max-width: 500px;
-			> h4 {
-				font-size: 32px;
+		.benefit__five {
+			flex-direction: column;
+			.titles {
+				max-width: 500px;
+				> h4 {
+					font-size: 32px;
+				}
 			}
 		}
 	}

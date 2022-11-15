@@ -42,10 +42,12 @@
 @media screen and (max-width: 1210px) {
 	.container {
 		padding: 20px 10px;
-		.titles {
-			max-width: 500px;
-			> h4 {
-				font-size: 32px;
+		.benefit__two {
+			.titles {
+				max-width: 500px;
+				> h4 {
+					font-size: 32px;
+				}
 			}
 		}
 	}
@@ -53,19 +55,23 @@
 
 @media screen and (max-width: 925px) {
 	.container {
-		flex-direction: column-reverse;
+		.benefit__two {
+			flex-direction: column-reverse;
+		}
 	}
 }
 
 @media screen and (max-width: 546px) {
 	.container {
-		.titles {
-			padding: 0 20px;
-			> h4 {
-				font-size: 28px;
-			}
-			> p {
-				font-size: 20px;
+		.benefit__two {
+			.titles {
+				padding: 0 20px;
+				> h4 {
+					font-size: 28px;
+				}
+				> p {
+					font-size: 20px;
+				}
 			}
 		}
 	}
@@ -73,13 +79,15 @@
 
 @media screen and (max-width: 376px) {
 	.container {
-		.titles {
-			padding: 0 20px;
-			> h4 {
-				font-size: 22px;
-			}
-			> p {
-				font-size: 18px;
+		.benefit__two {
+			.titles {
+				padding: 0 20px;
+				> h4 {
+					font-size: 22px;
+				}
+				> p {
+					font-size: 18px;
+				}
 			}
 		}
 	}
