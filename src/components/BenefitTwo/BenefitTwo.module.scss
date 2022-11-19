@@ -18,14 +18,17 @@
 			max-width: 700px;
 			> h4 {
 				font-size: 42px;
-				font-weight: 700;
+				font-weight: 400;
 				font-family: sans-serif;
 				margin-bottom: 10px;
 				> span {
+					font-weight: 500;
 					color: $pink;
 				}
 			}
 			> p {
+				font-weight: 400;
+
 				font-size: 24px;
 				font-family: sans-serif;
 			}
@@ -39,7 +42,7 @@
 	}
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1110px) {
 	.container {
 		padding: 20px 10px;
 		.benefit__two {

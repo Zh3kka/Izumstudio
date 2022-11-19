@@ -88,6 +88,7 @@ a {
 			margin-top: 70px;
 			display: block;
 			position: fixed;
+			width: 100%;
 			top: -2px;
 			right: 0;
 			background-color: $white;
@@ -102,9 +103,9 @@ a {
 				margin-top: 58px;
 				align-items: center;
 				list-style-type: none;
-				gap: 20px;
+				gap: 35px;
 				> li {
-					font-size: 20px;
+					font-size: 28px;
 					&:last-child {
 						margin-bottom: 140px;
 					}
@@ -130,6 +131,9 @@ a {
 
 @media screen and (max-width: 517px) {
 	.container {
+		> .mainMenu {
+			z-index: 100;
+		}
 		.popup {
 			top: 13px;
 		}
@@ -138,6 +142,7 @@ a {
 
 @media screen and (max-width: 426px) {
 	.container {
+		padding: 10px;
 		.popup {
 			width: 100%;
 			padding: 0px 15px;
@@ -145,8 +150,8 @@ a {
 		> nav {
 			> a {
 				> img {
-					width: 100px;
-					height: 66px;
+					width: 118px;
+					height: 69px;
 				}
 			}
 		}

@@ -62,10 +62,6 @@ const Contacts = () => {
 						<img src={map} alt='карта' />
 					</a>
 				</div>
-				<form
-					id='amoforms_script_1029478'
-					src='https://forms.amocrm.ru/forms/assets/js/amoforms.js?1668523750'
-				/>
 			</div>
 		</div>
 	)

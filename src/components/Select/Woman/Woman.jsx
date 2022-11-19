@@ -118,7 +118,7 @@ const Woman = () => {
 							</div>
 							<div className={styles.description}>
 								<div className={styles.subscription}>
-									<h2>Рекомендуем абонементы</h2>
+									<h2>Рекомендумые абонементы</h2>
 									<p>
 										Цена 1 процедуры {woman.onePrice}&#8381; <br />
 										Сохранится весь курс

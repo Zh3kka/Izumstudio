@@ -7,7 +7,7 @@
 	> h1 {
 		font-size: 42px;
 		text-align: center;
-		font-weight: bold;
+		font-weight: 500;
 		margin-bottom: 20px;
 	}
 	.information {
@@ -17,11 +17,13 @@
 		flex-wrap: wrap;
 		gap: 120px;
 		> .leftInfo {
+			display: flex;
+			flex-direction: column;
 			> a {
 				margin-top: 50px;
 				padding: 20px;
 				font-size: 18px;
-				font-weight: 600;
+				font-weight: 500;
 				background-color: $pink;
 				color: $white;
 				border-radius: 10px;
@@ -42,7 +44,7 @@
 				font-size: 24px;
 				color: $black;
 				text-decoration: none;
-				font-weight: 600;
+				font-weight: 500;
 				&:first-child {
 					color: $pink;
 					transition: all 0.3s ease-in-out;
@@ -55,13 +57,14 @@
 		.adress {
 			display: flex;
 			flex-direction: column;
+			gap: 10px;
 			margin: 20px 0px;
 			> p {
 				display: flex;
 				align-items: center;
 				font-size: 18px;
 				> span {
-					font-weight: 700;
+					font-weight: 600;
 				}
 				> img {
 					width: 28px;
@@ -119,7 +122,7 @@
 			}
 			.adress {
 				> p {
-					align-items: center;
+					align-items: flex-start;
 					justify-content: center;
 					flex-wrap: wrap;
 				}
@@ -139,12 +142,12 @@
 @media screen and (max-width: 376px) {
 	.container {
 		.information {
-			.adress {
-				> p {
-					font-size: 16px;
-				}
-			}
 			.leftInfo {
+				.adress {
+					> p {
+						font-size: 16px;
+					}
+				}
 				> a {
 					padding: 14px;
 					font-size: 14px;

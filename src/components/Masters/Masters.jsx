@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import Slider from 'react-slick'
-import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
+import { BiChevronRight, BiChevronLeft } from 'react-icons/bi'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -61,7 +61,7 @@ function SampleNextArrow(props) {
 	const { className, onClick } = props
 	return (
 		<div className={className} onClick={onClick}>
-			<BsArrowRight style={{ color: '#d10054', fontSize: '30px' }} />
+			<BiChevronRight style={{ color: '#722b4f', fontSize: '30px' }} />
 		</div>
 	)
 }
@@ -70,7 +70,7 @@ function SamplePrevArrow(props) {
 	const { className, onClick } = props
 	return (
 		<div className={className} onClick={onClick} style={{ left: '-38px' }}>
-			<BsArrowLeft style={{ color: '#d10054', fontSize: '30px' }} />
+			<BiChevronLeft style={{ color: '#722b4f', fontSize: '30px' }} />
 		</div>
 	)
 }
@@ -106,7 +106,7 @@ const settings = {
 const Masters = () => {
 	return (
 		<div className={styles.cardGroup} id='Masters'>
-			<h2>Косметологи с медицинским образованием и опытом более 3х лет</h2>
+			<h2>Косметологи с медицинским образованием и опытом более 3-х лет</h2>
 			<div className={styles.masters}>
 				<Slider {...settings}>
 					{masters.map(master => {

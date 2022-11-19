@@ -1,0 +1,114 @@
+@import '../../../scss/variables';
+
+.third__modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: auto;
+	background-color: $white;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	> span {
+		> h2 {
+			margin-bottom: 20px;
+		}
+	}
+	.third__modal__button {
+		margin: 20px 0 0 0;
+	}
+}
+
+.second__modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	height: auto;
+	background-color: $white;
+	padding: 30px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.form__action {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+		> input {
+			margin: 25px 0;
+			padding: 5px;
+			font-size: 18px;
+			width: 300px;
+		}
+		> button[type='submit'] {
+			text-align: center;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.label {
+		font-size: 24px;
+	}
+	.third__modal {
+		> h2 {
+			font-size: 20px;
+		}
+		> a {
+			> button {
+				padding: 15px;
+			}
+		}
+	}
+	.second__modal {
+		padding: 15px;
+		width: 94%;
+		.label {
+			max-width: 230px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.second__modal {
+		padding: 15px;
+		width: 94%;
+	}
+	.form {
+		.form__action {
+			> input {
+				margin: 5px 0 25px;
+			}
+			> button[type='submit'] {
+				padding: 14px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.form {
+		.form__action {
+			> input {
+				width: 250px;
+			}
+		}
+	}
+	.secondary {
+		> p {
+			max-width: 126px;
+			text-align: left;
+		}
+	}
+}

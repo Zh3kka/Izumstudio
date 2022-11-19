@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './BenefitFive.module.scss'
 import five from '../../img/five.webp'
 import Button from '../UI/Button/Button'
+import ButtonForm from '../UI/ButtonForm/ButtonForm'
 
 const BenefitFive = () => {
 	return (
@@ -9,7 +10,7 @@ const BenefitFive = () => {
 			<div className={styles.benefit__five}>
 				<div className={styles.titles}>
 					<h4>
-						<span>Стойкий</span> результат уже а 8-10 процедур курсе
+						<span>Стойкий</span> результат уже за 8-10 процедур
 					</h4>
 					<p>
 						С&nbsp;каждой процедурой бриться нужно реже <br /> Кожа становится
@@ -19,10 +20,7 @@ const BenefitFive = () => {
 				</div>
 				<img src={five} alt='Первое преимущество' />
 			</div>
-			<Button
-				title='Заказать обратный звонок'
-				link='https://n177562.yclients.com/group:147144/city:2#1'
-			/>
+			<ButtonForm title='Заказать обратный звонок' />
 		</div>
 	)
 }

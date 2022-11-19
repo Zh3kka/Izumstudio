@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Man.module.scss'
-import Subcard from '../../../img/card.webp'
+import Mansubcard from '../../../img/manCard.webp'
 
 const womansComplex = [
 	{
@@ -123,14 +123,14 @@ const Man = () => {
 							</div>
 							<div className={styles.description}>
 								<div className={styles.subscription}>
-									<h2>Рекомендуем абонементы</h2>
+									<h2>Рекомендумые абонементы</h2>
 									<p>
 										Цена 1 процедуры {woman.onePrice}&#8381; <br />
 										Сохранится весь курс
 									</p>
 									<div className={styles.subImage}>
 										<img
-											src={Subcard}
+											src={Mansubcard}
 											alt='Карта абонемента'
 											width={240}
 											height={121}
@@ -154,7 +154,7 @@ const Man = () => {
 									</div>
 									<div className={styles.subImage}>
 										<img
-											src={Subcard}
+											src={Mansubcard}
 											alt='Карта абонемента'
 											width={240}
 											height={121}

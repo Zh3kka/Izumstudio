@@ -4,16 +4,77 @@
 	opacity: 1;
 }
 
+.label {
+	font-size: 28px;
+}
+
+.third__modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: auto;
+	background-color: $white;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	> span {
+		> h2 {
+			margin-bottom: 20px;
+		}
+	}
+	.third__modal__button {
+		margin: 20px 0 0 0;
+	}
+}
+
+.second__modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	height: auto;
+	background-color: $white;
+	padding: 30px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.form__action {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+		> input {
+			margin: 25px 0;
+			padding: 5px;
+			font-size: 18px;
+			width: 300px;
+		}
+		> button[type='submit'] {
+			text-align: center;
+			margin: 0;
+		}
+	}
+}
+
 .secondary {
 	background-color: transparent;
 	box-shadow: 0px 0px 0px 0px;
-	padding: 0 0;
+	padding: 10px;
 	display: flex;
 	margin: 0;
 	max-width: 700px;
-	align-items: center;
+	align-items: flex-start;
 	border: none;
 	> p {
+		text-align: left;
 		color: $black;
 		padding: 10px 0px 0px 10px;
 		transition: color 0.3s ease;
@@ -43,16 +104,27 @@
 		margin: 0 auto;
 		h1 {
 			z-index: 100;
-			letter-spacing: 1px;
 			max-width: 640px;
-			color: $white;
-			font-weight: 700;
+			display: table;
+			background: linear-gradient(45deg, #722b4f 33%, #c58293 66%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: 500;
 			font-size: 52px;
-			line-height: 1.23;
+			line-height: 1.1;
 			text-align: left;
 			margin-bottom: 60px;
 			span {
-				color: $pink;
+				display: table;
+				background: radial-gradient(
+					circle,
+					rgba(255, 255, 255, 1) 0%,
+					rgba(255, 255, 255, 1) 100%
+				);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				// 5e7ee3
+				// #ff3d00
 			}
 		}
 		.buttons {
@@ -70,7 +142,13 @@
 				border-radius: 12px;
 				outline: none;
 				font-size: 16px;
-				font-weight: 700;
+				font-weight: 500;
+				background: rgb(182, 120, 43);
+				background: linear-gradient(
+					90deg,
+					rgba(182, 120, 43, 1) 0%,
+					rgba(253, 219, 130, 1) 100%
+				);
 			}
 			> a {
 				display: flex;
@@ -104,7 +182,7 @@
 
 @media screen and (max-width: 901px) {
 	.bg {
-		background: url('../../img/bgallbody.webp');
+		background: url('../../img/testbg1.jpg');
 		background-position: center;
 		background-size: cover;
 		height: auto;
@@ -140,6 +218,27 @@
 }
 
 @media screen and (max-width: 426px) {
+	.label {
+		font-size: 24px;
+	}
+	.third__modal {
+		> h2 {
+			font-size: 20px;
+		}
+		> a {
+			> button {
+				padding: 15px;
+			}
+		}
+	}
+	.second__modal {
+		padding: 15px;
+		width: 94%;
+		.label {
+			max-width: 230px;
+			margin-bottom: 15px;
+		}
+	}
 	.bg {
 		.container {
 			> h1 {
@@ -158,6 +257,21 @@
 }
 
 @media screen and (max-width: 376px) {
+	.second__modal {
+		padding: 15px;
+		width: 94%;
+	}
+	.form {
+		.form__action {
+			> input {
+				margin: 5px 0 25px;
+			}
+			> button[type='submit'] {
+				padding: 14px;
+			}
+		}
+	}
+
 	.bg {
 		.container {
 			.buttons {
@@ -173,6 +287,13 @@
 }
 
 @media screen and (max-width: 321px) {
+	.form {
+		.form__action {
+			> input {
+				width: 250px;
+			}
+		}
+	}
 	.secondary {
 		> p {
 			max-width: 126px;

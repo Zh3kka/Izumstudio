@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './BestStudio.module.scss'
 import project from '../../img/bs.webp'
+import ButtonForm from '../UI/ButtonForm/ButtonForm'
 
 const BestStudio = () => {
 	return (
@@ -19,13 +20,7 @@ const BestStudio = () => {
 					/>
 				</div>
 			</div>
-			<a
-				href='https://n177562.yclients.com/group:147144/city:2#1'
-				target='_blank'
-				rel='noopener noreferrer'
-			>
-				<button className={styles.primary}>записаться на процедуру</button>
-			</a>
+			<ButtonForm title='Записаться онлайн' />
 		</div>
 	)
 }

@@ -15,15 +15,19 @@
 		margin: 0 auto;
 		> h1 {
 			font-size: 52px;
-			font-weight: 700;
+			font-weight: 600;
 		}
 		> span {
+			display: flex;
+			align-items: center;
+			gap: 5px;
 			font-size: 24px;
 			max-width: 886px;
-			font-weight: 600;
+			font-weight: 500;
 		}
 		> p {
 			font-size: 18px;
+			font-weight: 500;
 		}
 	}
 }
