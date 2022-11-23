@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Reviews.module.scss'
-import Button from '../UI/Button/Button'
+import ButtonForm from '../UI/ButtonForm/ButtonForm'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -82,10 +82,7 @@ const Reviews = () => {
 					</div>
 				</div>
 			</div>
-			<Button
-				title='Хочу так же'
-				link='https://n177562.yclients.com/group:147144/city:2#1'
-			/>
+			<ButtonForm title='Хочу так же' />
 		</div>
 	)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Masters.module.scss'
-import Button from '../UI/Button/Button'
+import ButtonForm from '../UI/ButtonForm/ButtonForm'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
@@ -134,10 +134,7 @@ const Masters = () => {
 					})}
 				</Slider>
 			</div>
-			<Button
-				title='Выбрать мастера'
-				link='https://n177562.yclients.com/group:147144/city:2#1'
-			/>
+			<ButtonForm title='Выбрать мастера' />
 		</div>
 	)
 }

@@ -14,6 +14,7 @@ import Select from './components/Select/Select'
 import Mission from './components/Mission/Mission'
 import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
+import Quiz from './components/Quiz/Quiz'
 
 function App() {
 	return (
@@ -30,6 +31,7 @@ function App() {
 			<Masters />
 			<Reviews />
 			<Select />
+			<Quiz />
 			<Mission />
 			<Contacts />
 			<Footer />

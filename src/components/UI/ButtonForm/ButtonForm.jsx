@@ -35,8 +35,10 @@ const ButtonForm = ({ title }) => {
 	const handleCloseThirdModal = () => setOpenThirdModal(false)
 	// third modal
 	return (
-		<button onClick={handleOneOpen} style={{ padding: '15px' }}>
-			{title}
+		<div>
+			<button onClick={handleOneOpen} style={{ padding: '15px' }}>
+				{title}
+			</button>
 			<Modal
 				aria-labelledby='transition-modal-title'
 				aria-describedby='transition-modal-description'
@@ -94,10 +96,10 @@ const ButtonForm = ({ title }) => {
 								<Fade in={openThirdModal}>
 									<Box className={styles.third__modal}>
 										<h2>Спасибо!</h2> <br />
-										<h2>
+										<h3>
 											Запишитесь онлайн и получайте <br /> кэшбэк 10% с каждой
 											процедуры
-										</h2>
+										</h3>
 										<a
 											href='https://b828575.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F475792%2Fselect-master%3FpreviousStepUrl%3D%252Fcompany%252F601350%252Fselect-master%253FpreviousStepUrl%253D%25252Fcompany%25252F701744%25252Fselect-master%25253Fp&o='
 											target='_blank'
@@ -114,7 +116,7 @@ const ButtonForm = ({ title }) => {
 					</Box>
 				</Fade>
 			</Modal>
-		</button>
+		</div>
 	)
 }
 

@@ -15,7 +15,7 @@ const styleTwo = {
 	top: '50%',
 	left: '50%',
 	transform: 'translate(-50%, -50%)',
-	width: '100%',
+	width: '94%',
 	height: 'auto',
 	boxShadow: 20,
 }
@@ -184,6 +184,7 @@ const Header = () => {
 						</Fade>
 					</Modal>
 				</div>
+				{/* <img src={bgtest} className={styles.bgtest} alt='bgtest' /> */}
 			</div>
 		</div>
 	)

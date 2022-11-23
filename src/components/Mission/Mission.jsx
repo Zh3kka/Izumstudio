@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Mission.module.scss'
-import Button from '../UI/Button/Button'
 import heart from '../../img/black_heart.svg'
+import ButtonForm from '../UI/ButtonForm/ButtonForm'
 
 const Mission = () => {
 	return (
@@ -26,10 +26,7 @@ const Mission = () => {
 					<img src={heart} alt='сердечко' width={25} height={25} />
 				</span>
 			</div>
-			<Button
-				title='Получить спецпредложение'
-				link='https://n177562.yclients.com/group:147144/city:2#1'
-			/>
+			<ButtonForm title='Получить спецпредложение' />
 		</div>
 	)
 }
