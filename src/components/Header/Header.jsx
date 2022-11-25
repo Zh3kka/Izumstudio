@@ -77,7 +77,7 @@ const Header = () => {
 						onClick={handleOneOpen}
 						style={{ padding: '15px' }}
 					>
-						записаться онлайн
+						Записаться онлайн
 					</button>
 					<Modal
 						aria-labelledby='transition-modal-title'
