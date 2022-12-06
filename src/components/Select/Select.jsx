@@ -18,9 +18,8 @@ const Select = () => {
 		<div className={styles.container} id='Price'>
 			<h1>
 				{' '}
-				<span> Спецпредложения</span>
-				<br />
-				для новых клиентов
+				<span> Ознакомьтесь </span>
+				<br />с подарочными ценами
 			</h1>
 			<div className={styles.select}>
 				<select

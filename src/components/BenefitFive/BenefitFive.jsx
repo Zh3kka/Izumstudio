@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './BenefitFive.module.scss'
-import five from '../../img/five.webp'
+import five from '../../img/benefits/five.webp'
 import ButtonForm from '../UI/ButtonForm/ButtonForm'
 
 const BenefitFive = () => {

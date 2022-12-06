@@ -77,9 +77,6 @@
 			> .carusel {
 				.images {
 					color: $black;
-					> p {
-						font-size: 18px;
-					}
 					.star_date {
 						display: flex;
 						justify-content: center;
@@ -107,25 +104,6 @@
 				}
 			}
 		}
-	}
-}
-button {
-	cursor: pointer;
-	margin: 15px;
-	padding: 20px;
-	border: none;
-	border-radius: 12px;
-	outline: none;
-	font-size: 16px;
-	font-weight: 500;
-	background-color: $pink;
-	color: $white;
-	border: 1px solid $pink;
-	transition: all 0.3s ease-in-out;
-	&:hover {
-		border: 1px solid $pink;
-		background-color: $white;
-		color: $pink;
 	}
 }
 

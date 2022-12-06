@@ -7,27 +7,27 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const videoReview = [
 	{
 		id: 1,
-		videoPath: require('../../img/video/video1.mp4'),
+		videoPath: require('../../img/video/video1.webm'),
 	},
 	{
 		id: 2,
-		videoPath: require('../../img/video/video2.mp4'),
+		videoPath: require('../../img/video/video2.webm'),
 	},
 	{
 		id: 3,
-		videoPath: require('../../img/video/video3.mp4'),
+		videoPath: require('../../img/video/video3.webm'),
 	},
 	{
 		id: 4,
-		videoPath: require('../../img/video/video4.mp4'),
+		videoPath: require('../../img/video/video4.webm'),
 	},
 	{
 		id: 5,
-		videoPath: require('../../img/video/video5.MOV'),
+		videoPath: require('../../img/video/video5.webm'),
 	},
 	{
 		id: 6,
-		videoPath: require('../../img/video/video6.MOV'),
+		videoPath: require('../../img/video/video6.webm'),
 	},
 ]
 

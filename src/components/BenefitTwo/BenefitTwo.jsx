@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './BenefitTwo.module.scss'
-import two from '../../img/two.webp'
+import two from '../../img/benefits/two.webp'
 import ButtonForm from '../UI/ButtonForm/ButtonForm'
 
 const BenefitTwo = () => {

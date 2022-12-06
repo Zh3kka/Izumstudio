@@ -14,7 +14,7 @@ import yellow from '../../img/yellow.webp'
 const Contacts = () => {
 	return (
 		<div className={styles.container} id='Contacts'>
-			<h1>Удобное расположение</h1>
+			<h1>Удобное расположение студий</h1>
 			<div className={styles.information}>
 				<div className={styles.leftInfo}>
 					<div className={styles.infoTitle}>

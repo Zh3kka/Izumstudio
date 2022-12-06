@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Woman.module.scss'
 import Subcard from '../../../img/card.webp'
+import ButtonFormSelect from '../../UI/ButtonFormSelect/ButtonFormSelect'
+import ButtonFormAbonent from '../../UI/ButtonFormAbonent/ButtonFormAbonent'
 
 const womansComplex = [
 	{
@@ -9,10 +11,9 @@ const womansComplex = [
 		imagePath: require('../../../img/woman/wom1.webp'),
 		namingComplex: 'Подмышки\r\nБикини тотальное\r\n',
 		present: '',
-		price: 3000,
-		oldPrice: 4000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 4000,
+		price: 1990,
+		oldPrice: 3000,
+		onePrice: 3000,
 		abonentPrice5Procedure: '10 000',
 		oldAbonentPrice5Procedure: '15 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/406167',
@@ -26,10 +27,9 @@ const womansComplex = [
 		imagePath: require('../../../img/woman/wom2.webp'),
 		namingComplex: `Подмышки\r\nБикини тотальное\r\nГолени\r\n1 малая зона в подарок\r\n`,
 		present: '(линия живота, губа, ареолы, пальцы)',
-		price: 4000,
-		oldPrice: 5000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 5000,
+		price: 2990,
+		oldPrice: 4000,
+		onePrice: 4000,
 		abonentPrice5Procedure: '15 000',
 		oldAbonentPrice5Procedure: '20 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405179',
@@ -43,10 +43,9 @@ const womansComplex = [
 		imagePath: require('../../../img/woman/wom3.webp'),
 		namingComplex: `Подмышки\r\nБикини тотальное\r\nНоги полностью\r\n2 малая зона в подарок\r\n`,
 		present: '(линия живота, губа, ареолы, пальцы)',
-		price: 5000,
-		oldPrice: 6000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 6000,
+		price: 3990,
+		oldPrice: 5000,
+		onePrice: 5000,
 		abonentPrice5Procedure: '20 000',
 		oldAbonentPrice5Procedure: '25 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405136',
@@ -60,10 +59,9 @@ const womansComplex = [
 		imagePath: require('../../../img/woman/wom4.webp'),
 		namingComplex: `Подмышки\r\nБикини\r\nтотальное\r\nНоги полностью\r\nРуки полностью\r\n3 малые зоны в подарок\r\n`,
 		present: '(линия живота, губа, ареолы, пальцы)',
-		price: 6000,
-		oldPrice: 7000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 7000,
+		price: 4990,
+		oldPrice: 6000,
+		onePrice: 6000,
 		abonentPrice5Procedure: '25 000',
 		oldAbonentPrice5Procedure: '30 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405134',
@@ -77,10 +75,9 @@ const womansComplex = [
 		imagePath: require('../../../img/woman/wom5.webp'),
 		namingComplex: `Абсолютно всё\r\n`,
 		present: '',
-		price: 7000,
-		oldPrice: 8000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 8000,
+		price: 5990,
+		oldPrice: 7000,
+		onePrice: 7000,
 		abonentPrice5Procedure: '30 000',
 		oldAbonentPrice5Procedure: '40 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405148',
@@ -107,13 +104,7 @@ const Woman = () => {
 									<h2>Разовый визит</h2>
 									<p>{woman.price}&#8381;</p>
 									<span>{woman.oldPrice}&#8381;</span>
-									<a
-										href={woman.link}
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<button className={styles.primary}>записаться</button>
-									</a>
+									<ButtonFormSelect title='Записаться' />
 								</div>
 							</div>
 							<div className={styles.description}>
@@ -138,13 +129,10 @@ const Woman = () => {
 										<div className={styles.subNaming}>
 											<p>{woman.abonentPrice5Procedure} &#8381;</p>
 											<span>{woman.oldAbonentPrice5Procedure}&#8381;</span>
-											<a
-												href={woman.buy5Procedure}
-												target='_blank'
-												rel='noopener noreferrer'
-											>
-												купить
-											</a>
+											<ButtonFormAbonent
+												title='Купить'
+												link={woman.buy5Procedure}
+											/>
 										</div>
 									</div>
 									<div className={styles.subImage}>
@@ -163,13 +151,10 @@ const Woman = () => {
 										<div className={styles.subNaming}>
 											<p>{woman.abonentPrice10Procedure}&#8381;</p>
 											<span>{woman.oldAbonentPrice10Procedure}&#8381;</span>
-											<a
-												href={woman.buy10Procedure}
-												target='_blank'
-												rel='noopener noreferrer'
-											>
-												купить
-											</a>
+											<ButtonFormAbonent
+												title='Купить'
+												link={woman.buy10Procedure}
+											/>
 										</div>
 									</div>
 								</div>

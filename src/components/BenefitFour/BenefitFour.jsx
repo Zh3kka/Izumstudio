@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './BenefitFour.module.scss'
-import four from '../../img/four.webp'
+import four from '../../img/benefits/four.webp'
 
 const BenefitFour = () => {
 	return (

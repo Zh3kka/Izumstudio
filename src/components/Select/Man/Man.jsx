@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Man.module.scss'
 import Mansubcard from '../../../img/manCard.webp'
+import ButtonFormSelect from '../../UI/ButtonFormSelect/ButtonFormSelect'
+import ButtonFormAbonent from '../../UI/ButtonFormAbonent/ButtonFormAbonent'
 
 const womansComplex = [
 	{
@@ -9,10 +11,9 @@ const womansComplex = [
 		imagePath: require('../../../img/man/man1.webp'),
 		namingComplex: 'Подмышки\r\nПах полностью\r\n',
 		present: '',
-		price: 4000,
-		oldPrice: 5000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 5000,
+		price: 2990,
+		oldPrice: 4000,
+		onePrice: 4000,
 		abonentPrice5Procedure: '15 000',
 		oldAbonentPrice5Procedure: '20 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405164',
@@ -26,10 +27,9 @@ const womansComplex = [
 		imagePath: require('../../../img/man/man2.webp'),
 		namingComplex: `Подмышки\r\nПах полностью\r\nШея сзади\r\n1 малая зона в подарок\r\n`,
 		present: '(межбровье, линия живота, губа, ареолы, пальцы)',
-		price: 5000,
-		oldPrice: 6000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 6000,
+		price: 3990,
+		oldPrice: 5000,
+		onePrice: 5000,
 		abonentPrice5Procedure: '20 000',
 		oldAbonentPrice5Procedure: '25 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405182',
@@ -43,10 +43,9 @@ const womansComplex = [
 		imagePath: require('../../../img/man/man3.webp'),
 		namingComplex: `Подмышки\r\nПах полностью\r\nОкантовка бороды и стрижки\r\nЛиния поясницы или\r\n2 малая зона в подарок\r\n`,
 		present: '(межбровье, линия живота, губа, ареолы, пальцы)',
-		price: 6000,
-		oldPrice: 7000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 7000,
+		price: 4990,
+		oldPrice: 6000,
+		onePrice: 6000,
 		abonentPrice5Procedure: '25 000',
 		oldAbonentPrice5Procedure: '30 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405139',
@@ -60,10 +59,9 @@ const womansComplex = [
 		imagePath: require('../../../img/man/man4.webp'),
 		namingComplex: `Подмышки\r\nПах полностью\r\nОкантовка бороды и стрижки\r\nСпина полностью\r\n3 малая зона в подарок\r\n`,
 		present: '(межбровье, линия живота, губа, ареолы, пальцы)',
-		price: 7000,
-		oldPrice: 8000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 8000,
+		price: 5990,
+		oldPrice: 7000,
+		onePrice: 7000,
 		abonentPrice5Procedure: '30 000',
 		oldAbonentPrice5Procedure: '35 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405137',
@@ -77,10 +75,9 @@ const womansComplex = [
 		imagePath: require('../../../img/man/man5.webp'),
 		namingComplex: `Абсолютно всё\r\n`,
 		present: '',
-		price: 8000,
-		oldPrice: 9000,
-		link: 'https://n177562.yclients.com/company:659154/idx:0/service#1',
-		onePrice: 9000,
+		price: 6990,
+		oldPrice: 8000,
+		onePrice: 8000,
 		abonentPrice5Procedure: '30 000',
 		oldAbonentPrice5Procedure: '40 000',
 		buy5Procedure: 'https://o420.yclients.com/loyalty/subscription/405148',
@@ -112,13 +109,7 @@ const Man = () => {
 									<h2>Разовый визит</h2>
 									<p>{woman.price}&#8381;</p>
 									<span>{woman.oldPrice}&#8381;</span>
-									<a
-										href={woman.link}
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<button className={styles.primary}>записаться</button>
-									</a>
+									<ButtonFormSelect title='Записаться' />
 								</div>
 							</div>
 							<div className={styles.description}>
@@ -143,13 +134,10 @@ const Man = () => {
 										<div className={styles.subNaming}>
 											<p>{woman.abonentPrice5Procedure} &#8381;</p>
 											<span>{woman.oldAbonentPrice5Procedure}&#8381;</span>
-											<a
-												href={woman.buy5Procedure}
-												target='_blank'
-												rel='noopener noreferrer'
-											>
-												купить
-											</a>
+											<ButtonFormAbonent
+												title='Купить'
+												link={woman.buy5Procedure}
+											/>
 										</div>
 									</div>
 									<div className={styles.subImage}>
@@ -168,13 +156,10 @@ const Man = () => {
 										<div className={styles.subNaming}>
 											<p>{woman.abonentPrice10Procedure}&#8381;</p>
 											<span>{woman.oldAbonentPrice10Procedure}&#8381;</span>
-											<a
-												href={woman.buy10Procedure}
-												target='_blank'
-												rel='noopener noreferrer'
-											>
-												купить
-											</a>
+											<ButtonFormAbonent
+												title='Купить'
+												link={woman.buy10Procedure}
+											/>
 										</div>
 									</div>
 								</div>

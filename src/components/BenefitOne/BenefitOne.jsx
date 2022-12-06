@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './BenefitOne.module.scss'
-import one from '../../img/one.webp'
+import one from '../../img/benefits/one.webp'
 
 const BenefitOne = () => {
 	return (

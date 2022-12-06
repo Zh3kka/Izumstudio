@@ -1,6 +1,5 @@
 import styles from './scss/app.scss'
 import MainMenu from './components/MainMenu/MainMenu'
-import HeaderMenu from './components/HeaderMenu/HeaderMenu'
 import Header from './components/Header/Header'
 import BestStudio from './components/BestStudio/BestStudio'
 import BenefitOne from './components/BenefitOne/BenefitOne'
@@ -20,7 +19,7 @@ function App() {
 	return (
 		<div className={styles.body}>
 			<MainMenu />
-			<HeaderMenu />
+			{/* <HeaderMenu /> */}
 			<Header />
 			<BestStudio />
 			<BenefitOne />
@@ -28,11 +27,11 @@ function App() {
 			<BenefitThree />
 			<BenefitFour />
 			<BenefitFive />
-			<Masters />
-			<Reviews />
 			<Select />
-			<Quiz />
+			<Reviews />
+			<Masters />
 			<Mission />
+			<Quiz />
 			<Contacts />
 			<Footer />
 		</div>
