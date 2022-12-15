@@ -122,7 +122,7 @@ const ButtonForm = ({ title }) => {
 											процедуры
 										</h3>
 										<a
-											href='https://b177562.yclients.com/company/659154/select-services?o='
+											href='https://b177562.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F659154%2Fselect-services%3Fo%3D&o='
 											target='_blank'
 											rel='noreferrer'
 										>

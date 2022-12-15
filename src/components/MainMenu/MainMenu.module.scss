@@ -12,7 +12,6 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 20px;
 		> .mainMenu {
 			display: flex;
 			align-items: center;
@@ -110,7 +109,7 @@ a {
 	right: -100%;
 }
 
-@media screen and (max-width: 1237px) {
+@media screen and (max-width: 912px) {
 	.container {
 		display: flex;
 		align-items: center;
