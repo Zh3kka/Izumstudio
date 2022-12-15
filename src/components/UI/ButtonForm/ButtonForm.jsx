@@ -9,7 +9,7 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import axios from 'axios'
 
-const ButtonForm = ({ title }) => {
+const ButtonForm = ({ title, link }) => {
 	const [number, setNumber] = useState('')
 	const handleSubmit = e => {
 		e.preventDefault()
@@ -121,11 +121,7 @@ const ButtonForm = ({ title }) => {
 											Запишитесь онлайн и получайте <br /> кэшбэк 10% с каждой
 											процедуры
 										</h3>
-										<a
-											href='https://b177562.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F659154%2Fselect-services%3Fo%3D&o='
-											target='_blank'
-											rel='noreferrer'
-										>
+										<a href={link} target='_blank' rel='noreferrer'>
 											<button className={styles.primary}>Записаться</button>
 										</a>
 									</Box>

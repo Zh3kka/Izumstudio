@@ -82,7 +82,10 @@ const Reviews = () => {
 					</div>
 				</div>
 			</div>
-			<ButtonForm title='Хочу так же' />
+			<ButtonForm
+				title='Хочу так же'
+				link='https://b177562.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F659154%2Fselect-services%3Fo%3D&o='
+			/>
 		</div>
 	)
 }

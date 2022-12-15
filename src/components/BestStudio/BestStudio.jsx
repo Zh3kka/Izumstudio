@@ -20,7 +20,10 @@ const BestStudio = () => {
 					/>
 				</div>
 			</div>
-			<ButtonForm title='Записаться онлайн' />
+			<ButtonForm
+				title='Записаться онлайн'
+				link='https://b177562.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F659154%2Fselect-services%3Fo%3D&o='
+			/>
 		</div>
 	)
 }
