@@ -19,8 +19,8 @@ function App() {
 				<Route id='4' path='/4000' element={<Offer4 />} />
 				<Route id='5' path='/5000' element={<Offer5 />} />
 				<Route id='6' path='/6000' element={<Offer6 />} />
+				<Route path='*' component={<NotFound />} />
 			</Routes>
-			<Route path='*' component={<NotFound />} />
 		</Router>
 	)
 }
