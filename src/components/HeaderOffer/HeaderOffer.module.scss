@@ -119,6 +119,17 @@
 	background-size: cover;
 	height: auto;
 	width: 100%;
+	position: relative;
+	.bg:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 1);
+		z-index: 2;
+	}
 	.container {
 		padding: 100px 0 100px 0;
 		max-width: 1160px;
@@ -126,13 +137,14 @@
 		h1 {
 			z-index: 100;
 			max-width: 640px;
-			font-weight: 500;
+			font-weight: 400;
 			color: $white;
 			font-size: 52px;
 			line-height: 1.1;
 			text-align: left;
-			span {
-				color: $pink;
+			> span {
+				font-weight: 500;
+				color: #931662;
 			}
 		}
 
@@ -197,12 +209,6 @@
 		.container {
 			background: none;
 			backdrop-filter: none;
-			> h1 {
-				color: $pink;
-				> span {
-					color: $white;
-				}
-			}
 			.buttons {
 				> button:first-child {
 					background: rgb(182, 120, 43);

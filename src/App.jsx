@@ -11,13 +11,13 @@ function App() {
 	return (
 		<Router>
 			<Routes>
-				<Route exact path='/' element={<Home />} />
-				<Route exact path='/1000' element={<Offer1 />} />
-				<Route exact path='/2000' element={<Offer2 />} />
-				<Route exact path='/3000' element={<Offer3 />} />
-				<Route exact path='/4000' element={<Offer4 />} />
-				<Route exact path='/5000' element={<Offer5 />} />
-				<Route exact path='/6000' element={<Offer6 />} />
+				<Route id='home' exact path='/' element={<Home />} />
+				<Route id='1' path='/1000' element={<Offer1 />} />
+				<Route id='2' path='/2000' element={<Offer2 />} />
+				<Route id='3' path='/3000' element={<Offer3 />} />
+				<Route id='4' path='/4000' element={<Offer4 />} />
+				<Route id='5' path='/5000' element={<Offer5 />} />
+				<Route id='6' path='/6000' element={<Offer6 />} />
 			</Routes>
 		</Router>
 	)

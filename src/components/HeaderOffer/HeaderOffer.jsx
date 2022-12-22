@@ -30,8 +30,9 @@ const HeaderOffer = () => {
 		<div className={styles.bg} id='Top'>
 			<div className={styles.container}>
 				<h1>
-					Вам подарок!
-					<span> Сертификат 1000 рублей </span>на лазерную эпиляцию
+					ВАМ ПОДАРОК!
+					<br /> <span> СЕРТИФИКАТ 1000 РУБЛЕЙ</span> <br />
+					НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ
 				</h1>
 				<div className={styles.buttons}>
 					<ButtonFormOffer
