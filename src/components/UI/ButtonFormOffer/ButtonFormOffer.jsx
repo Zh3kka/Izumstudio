@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './ButtonFormSelect.module.scss'
+import styles from './ButtonFormOffer.module.scss'
 import Backdrop from '@mui/material/Backdrop'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
@@ -9,7 +9,7 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import axios from 'axios'
 
-const ButtonFormSelect = ({ title }) => {
+const ButtonFormOffer = ({ title, link }) => {
 	const [number, setNumber] = useState('')
 	const handleSubmit = e => {
 		e.preventDefault()
@@ -38,11 +38,11 @@ const ButtonFormSelect = ({ title }) => {
 	// third modal
 
 	return (
-		<div>
+		<div className={styles.btn}>
 			<button
-				className={styles.primary}
 				onClick={handleOneOpen}
 				style={{ padding: '15px' }}
+				className={styles.primary}
 			>
 				{title}
 			</button>
@@ -66,11 +66,7 @@ const ButtonFormSelect = ({ title }) => {
 							color='#000000'
 							component='h2'
 						>
-							<form
-								autoComplete='off'
-								onSubmit={handleSubmit}
-								className={styles.form}
-							>
+							<form onSubmit={handleSubmit} className={styles.form}>
 								<label type='phone' className={styles.label}>
 									Введите Ваш номер телефона
 								</label>
@@ -80,7 +76,6 @@ const ButtonFormSelect = ({ title }) => {
 											display: 'flex',
 											alignItems: 'center',
 											justifyContent: 'center',
-											marginBottom: '20px',
 										}}
 										inputStyle={{
 											padding: '10px',
@@ -121,17 +116,16 @@ const ButtonFormSelect = ({ title }) => {
 							>
 								<Fade in={openThirdModal}>
 									<Box className={styles.third__modal}>
-										<h2>Спасибо!</h2> <br />
+										<h2>Поздравляем!</h2> <br />
 										<h3>
-											Запишитесь онлайн и получайте <br /> кэшбэк 10% с каждой
-											процедуры
+											Ваш сертификат активирован <br /> Запишитесь на процедуру{' '}
+											<br /> он-лайн и получайте кешбэк 10%
+											<br /> от стоимости всех процедур
 										</h3>
-										<a
-											href='https://b177562.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F659154%2Fselect-services%3Fo%3D&o='
-											target='_blank'
-											rel='noreferrer'
-										>
-											<button className={styles.primary}>Записаться</button>
+										<a href={link} target='_blank' rel='noreferrer'>
+											<button className={styles.primary}>
+												Записаться онлайн
+											</button>
 										</a>
 									</Box>
 								</Fade>
@@ -144,4 +138,4 @@ const ButtonFormSelect = ({ title }) => {
 	)
 }
 
-export default ButtonFormSelect
+export default ButtonFormOffer

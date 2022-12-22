@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './BestStudio.module.scss'
 import project from '../../img/bs.webp'
-import ButtonForm from '../UI/ButtonForm/ButtonForm'
+import ButtonForm from '../UI/ButtonFormOffer/ButtonFormOffer'
 
 const BestStudio = () => {
 	return (

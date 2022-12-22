@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './BenefitFive.module.scss'
 import five from '../../img/benefits/five.webp'
-import ButtonForm from '../UI/ButtonForm/ButtonForm'
+import ButtonForm from '../UI/ButtonFormOffer/ButtonFormOffer'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 

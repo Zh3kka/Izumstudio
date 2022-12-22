@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Reviews.module.scss'
-import ButtonForm from '../UI/ButtonForm/ButtonForm'
+import ButtonForm from '../UI/ButtonFormOffer/ButtonFormOffer'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 

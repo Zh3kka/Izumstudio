@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Masters.module.scss'
-import ButtonForm from '../UI/ButtonForm/ButtonForm'
+import ButtonForm from '../UI/ButtonFormOffer/ButtonFormOffer'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Mission.module.scss'
 import heart from '../../img/black_heart.svg'
-import ButtonForm from '../UI/ButtonForm/ButtonForm'
+import ButtonForm from '../UI/ButtonFormOffer/ButtonFormOffer'
 
 const Mission = () => {
 	return (
