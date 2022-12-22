@@ -31,7 +31,11 @@ const HeaderOffer = () => {
 			<div className={styles.container}>
 				<h1>
 					ВАМ ПОДАРОК!
-					<br /> СЕРТИФИКАТ 1000 РУБЛЕЙ
+					<br />{' '}
+					<span>
+						{' '}
+						СЕРТИФИКАТ <strong>1000</strong> РУБЛЕЙ
+					</span>
 					<br />
 					НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ
 				</h1>

@@ -116,10 +116,10 @@ const ButtonFormOffer = ({ title, link }) => {
 							>
 								<Fade in={openThirdModal}>
 									<Box className={styles.third__modal}>
-										<h2>Поздравляем!</h2> <br />
+										<h2>Cертификат активирован!</h2> <br />
 										<h3>
-											Ваш сертификат активирован <br /> Запишитесь на процедуру{' '}
-											<br /> он-лайн и получайте кешбэк 10%
+											<br /> Запишитесь на процедуру <br /> онлайн и{' '}
+											<span> получайте кешбэк 10%</span>
 											<br /> от стоимости всех процедур
 										</h3>
 										<a href={link} target='_blank' rel='noreferrer'>
