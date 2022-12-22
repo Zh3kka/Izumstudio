@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/Screens/Home'
+import NotFound from './components/Screens/NotFound'
 import Offer1 from './components/Screens/Offer1'
 import Offer2 from './components/Screens/Offer2'
 import Offer3 from './components/Screens/Offer3'
@@ -19,6 +20,7 @@ function App() {
 				<Route id='5' path='/5000' element={<Offer5 />} />
 				<Route id='6' path='/6000' element={<Offer6 />} />
 			</Routes>
+			<Route path='*' component={<NotFound />} />
 		</Router>
 	)
 }
