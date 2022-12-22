@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './Woman.module.scss'
 import Subcard from '../../../img/card.webp'
-import ButtonFormSelect from '../../UI/ButtonFormSelect/ButtonFormSelect'
+import ButtonFormOffer from '../../UI/ButtonFormOffer/ButtonFormOffer'
 import ButtonFormAbonent from '../../UI/ButtonFormAbonent/ButtonFormAbonent'
-
+// НОВОСЛОБОДСКАЯ
 const womansComplex = [
 	{
 		id: 1,
@@ -104,7 +104,10 @@ const Woman = () => {
 									<h2>Разовый визит</h2>
 									<p>{woman.price}&#8381;</p>
 									<span>{woman.oldPrice}&#8381;</span>
-									<ButtonFormSelect title='Записаться' />
+									<ButtonFormOffer
+										title='Записаться'
+										link='https://b851015.yclients.com/select-city/2/select-branch?o='
+									/>
 								</div>
 							</div>
 							<div className={styles.description}>

@@ -3,7 +3,7 @@ import Man from './Man/Man'
 import Woman from './Woman/Woman'
 import styles from './SelectOffer.module.scss'
 
-const SelectOffer = () => {
+const SelectOffer6 = () => {
 	const [sex, setSex] = useState('woman')
 	const [manContentVisible, setManContentVisible] = useState(false)
 	const [womanContentVisible, setWomanContentVisible] = useState(false)
@@ -37,4 +37,4 @@ const SelectOffer = () => {
 	)
 }
 
-export default SelectOffer
+export default SelectOffer6

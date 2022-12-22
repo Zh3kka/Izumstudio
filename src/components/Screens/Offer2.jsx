@@ -14,14 +14,14 @@ import Masters from '../Masters/Masters'
 import Mission from '../Mission/Mission'
 import Quiz from '../Quiz/Quiz'
 import Reviews from '../Reviews/Reviews'
-import SelectOffer from '../SelectOffer/SelectOffer'
-// НОВОСЛОБОДСКАЯ
-const Offer2 = () => {
+import SelectOffer2 from '../SelectOffer2/SelectOffer2'
+// КУРСКАЯ
+const Offer1 = () => {
 	return (
 		<div className={styles.body}>
 			<MainMenu />
 			<HeaderOffer />
-			<SelectOffer />
+			<SelectOffer2 />
 			<BestStudio />
 			<BenefitOne />
 			<BenefitTwo />
@@ -38,4 +38,4 @@ const Offer2 = () => {
 	)
 }
 
-export default Offer2
+export default Offer1
