@@ -114,7 +114,7 @@
 }
 
 .bg {
-	background: url('../../img/bg1.jpg');
+	background: url('../../img/bg.webp');
 	background-position: center;
 	background-size: cover;
 	height: auto;
@@ -123,25 +123,19 @@
 		padding: 100px 0 100px 0;
 		max-width: 1160px;
 		margin: 0 auto;
-		.blur {
-			display: inline-block;
-			padding: 14px;
-			background: rgba(38, 37, 37, 0.03);
-			backdrop-filter: blur(8px);
-			border-radius: 14px;
-			h1 {
-				z-index: 100;
-				max-width: 640px;
-				font-weight: 500;
-				color: $white;
-				font-size: 52px;
-				line-height: 1.1;
-				text-align: left;
-				span {
-					color: $pink;
-				}
+		h1 {
+			z-index: 100;
+			max-width: 640px;
+			font-weight: 500;
+			color: $white;
+			font-size: 52px;
+			line-height: 1.1;
+			text-align: left;
+			span {
+				color: $pink;
 			}
 		}
+
 		.buttons {
 			z-index: 1;
 			display: flex;
@@ -182,11 +176,9 @@
 @media screen and (max-width: 1100px) {
 	.bg {
 		.container {
-			padding: 16px;
-			.blur {
-				> h1 {
-					font-size: 42px;
-				}
+			padding: 30px;
+			> h1 {
+				font-size: 42px;
 			}
 		}
 	}
@@ -194,7 +186,7 @@
 
 @media screen and (max-width: 913px) {
 	.bg {
-		background: url('../../img/testbg1.webp');
+		background: url('../../img/bg.webp');
 		background-position: center;
 		background-size: cover;
 		height: auto;
@@ -203,14 +195,12 @@
 			display: none;
 		}
 		.container {
-			> .blur {
-				background: none;
-				backdrop-filter: none;
-				> h1 {
-					color: $pink;
-					> span {
-						color: $white;
-					}
+			background: none;
+			backdrop-filter: none;
+			> h1 {
+				color: $pink;
+				> span {
+					color: $white;
 				}
 			}
 			.buttons {
@@ -275,12 +265,11 @@
 	}
 	.bg {
 		.container {
-			> .blur {
-				> h1 {
-					font-size: 32px;
-					margin-bottom: 15px;
-				}
+			> h1 {
+				font-size: 32px;
+				margin-bottom: 15px;
 			}
+
 			.buttons {
 				align-items: center;
 				> button {

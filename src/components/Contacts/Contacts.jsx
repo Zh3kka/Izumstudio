@@ -8,7 +8,7 @@ import green from '../../img/contacts/green.svg'
 import grey from '../../img/contacts/grey.svg'
 import orange from '../../img/contacts/orange.svg'
 import purple from '../../img/contacts/purple.svg'
-import red from '../../img/contacts/red.svg'
+import mcd from '../../img/contacts/mcd.svg'
 import yellow from '../../img/contacts/yellow.svg'
 
 const Contacts = () => {
@@ -25,6 +25,13 @@ const Contacts = () => {
 					</div>
 					<div className={styles.adress}>
 						<p>
+							<img src={green} alt='метро' /> <img src={metro} alt='метро' />
+							<img src={darkBlue} alt='метро' />{' '}
+							<img src={mcd} alt='метро' width='24px' height='24px' />
+							<span>&nbsp;Курская,&nbsp;</span> Яковоапостольский переулок, 9,
+							стр. 3
+						</p>
+						<p>
 							<img src={green} alt='метро' /> <img src={yellow} alt='метро' />{' '}
 							<img src={orange} alt='метро' />{' '}
 							<span>&nbsp;Новокузнецкая,&nbsp;</span> ул.Пятницкая, 20, стр.1
@@ -37,10 +44,6 @@ const Contacts = () => {
 						<p>
 							<img src={grey} alt='метро' /> <img src={metro} alt='метро' />{' '}
 							<span>&nbsp;Новослободская,&nbsp;</span>ул.Долгоруковская, 4А
-						</p>
-						<p>
-							<img src={red} alt='метро' /> <img src={metro} alt='метро' />{' '}
-							<span>&nbsp;Парк культуры,&nbsp;</span> ул.Пречистенка, 40/2с1
 						</p>
 						<p>
 							<img src={green} alt='метро' /> <img src={metro} alt='метро' />{' '}

@@ -8,8 +8,8 @@ function App() {
 		<Router>
 			<Routes>
 				<Route exact path='/' element={<Home />} />
-				<Route exact path='/all-woman' element={<OfferWoman />} />
-				<Route exact path='/all-man' element={<OfferMan />} />
+				<Route exact path='/100' element={<OfferWoman />} />
+				<Route exact path='/200' element={<OfferMan />} />
 			</Routes>
 		</Router>
 	)

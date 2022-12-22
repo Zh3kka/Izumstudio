@@ -33,7 +33,7 @@
 				font-family: sans-serif;
 			}
 		}
-		> img {
+		.image {
 			max-width: 400px;
 			width: 80%;
 			height: 30%;
@@ -77,6 +77,12 @@
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		text-align: center;
 	}
 }
 

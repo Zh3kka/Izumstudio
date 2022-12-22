@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../img/logo.webp'
+import logo from '../../img/logo.svg'
 import styles from './MainMenu.module.scss'
 import { Link } from 'react-scroll'
 import { HiMenu, HiOutlineX } from 'react-icons/hi'
@@ -53,7 +53,7 @@ const MainMenu = () => {
 					activeClass={styles.active}
 					href='/'
 				>
-					<img src={logo} alt='Логотип izumstudios' width={139} height={79} />
+					<img src={logo} alt='Логотип izumstudios' width={125} height={79} />
 				</Link>
 				<div className={styles.mainMenu}>
 					<ul>

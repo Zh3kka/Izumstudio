@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './BenefitOne.module.scss'
 import one from '../../img/benefits/one.webp'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const BenefitOne = () => {
 	return (
@@ -16,7 +18,12 @@ const BenefitOne = () => {
 					мощнее обычных
 				</p>
 			</div>
-			<img src={one} alt='Первое преимущество' />
+			<LazyLoadImage
+				src={one}
+				alt='Первое преимущество'
+				effect='blur'
+				className={styles.image}
+			/>
 		</div>
 	)
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './BenefitFive.module.scss'
 import five from '../../img/benefits/five.webp'
 import ButtonForm from '../UI/ButtonForm/ButtonForm'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const BenefitFive = () => {
 	return (
@@ -17,7 +19,12 @@ const BenefitFive = () => {
 						<br /> Эффект на&nbsp;несколько лет.
 					</p>
 				</div>
-				<img src={five} alt='Первое преимущество' />
+				<LazyLoadImage
+					src={five}
+					alt='Первое преимущество'
+					effect='blur'
+					className={styles.image}
+				/>
 			</div>
 			<ButtonForm
 				title='Заказать обратный звонок'

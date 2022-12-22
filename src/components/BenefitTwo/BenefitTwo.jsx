@@ -1,13 +1,20 @@
 import React from 'react'
 import styles from './BenefitTwo.module.scss'
 import two from '../../img/benefits/two.webp'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 import ButtonForm from '../UI/ButtonForm/ButtonForm'
 
 const BenefitTwo = () => {
 	return (
 		<div className={styles.container} id='Apparat'>
 			<div className={styles.benefit__two}>
-				<img src={two} alt='Первое преимущество' />
+				<LazyLoadImage
+					src={two}
+					alt='Первое преимущество'
+					effect='blur'
+					className={styles.image}
+				/>
 				<div className={styles.titles}>
 					<h4>
 						<span>Рекордная</span> скорость процедуры

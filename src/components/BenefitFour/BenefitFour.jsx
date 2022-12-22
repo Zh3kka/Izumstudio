@@ -1,11 +1,18 @@
 import React from 'react'
 import styles from './BenefitFour.module.scss'
 import four from '../../img/benefits/four.webp'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const BenefitFour = () => {
 	return (
 		<div className={styles.container} id='Apparat'>
-			<img src={four} alt='Первое преимущество' />
+			<LazyLoadImage
+				src={four}
+				alt='Первое преимущество'
+				effect='blur'
+				className={styles.image}
+			/>
 			<div className={styles.titles}>
 				<h4>
 					<span>Безопасная</span> процедура
