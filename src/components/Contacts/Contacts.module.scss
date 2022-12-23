@@ -63,7 +63,7 @@
 				align-items: center;
 				font-size: 18px;
 				> span {
-					font-weight: 600;
+					font-weight: 700;
 				}
 				> img {
 					width: 20px;
@@ -121,8 +121,10 @@
 				}
 			}
 			.adress {
-				max-width: 258px;
+				max-width: 260px;
+				gap: 20px;
 				> p {
+					line-height: 1;
 					align-items: flex-start;
 					justify-content: center;
 					flex-wrap: wrap;

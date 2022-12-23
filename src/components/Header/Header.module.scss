@@ -132,7 +132,7 @@
 			line-height: 1.1;
 			text-align: left;
 			span {
-				color: $pink;
+				color: #ff87d0;
 			}
 		}
 
@@ -198,7 +198,7 @@
 			background: none;
 			backdrop-filter: none;
 			> h1 {
-				color: $pink;
+				color: #ff87d0;
 				> span {
 					color: $white;
 				}
@@ -217,7 +217,7 @@
 						color: $white;
 						transition: color 0.3s ease;
 						&:hover {
-							color: $pink;
+							color: #ff87d0;
 						}
 					}
 				}

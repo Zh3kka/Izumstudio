@@ -13,12 +13,16 @@ function App() {
 		<Router>
 			<Routes>
 				<Route id='home' exact path='/' element={<Home />} />
-				<Route id='1' path='/1000' element={<Offer1 />} />
-				<Route id='2' path='/2000' element={<Offer2 />} />
-				<Route id='3' path='/3000' element={<Offer3 />} />
-				<Route id='4' path='/4000' element={<Offer4 />} />
-				<Route id='5' path='/5000' element={<Offer5 />} />
-				<Route id='6' path='/6000' element={<Offer6 />} />
+				<Route id='1' path='/001' element={<Offer1 />} />
+				<Route id='2' path='/002' element={<Offer2 />} />
+				<Route id='3' path='/003' element={<Offer3 />} />
+				<Route id='4' path='/004' element={<Offer4 />} />
+				<Route id='5' path='/005' element={<Offer5 />} />
+				<Route id='6' path='/006' element={<Offer6 />} />
+				<Route id='7' path='/007' element={<Offer6 />} />
+				<Route id='8' path='/008' element={<Offer6 />} />
+				<Route id='9' path='/009' element={<Offer6 />} />
+				<Route id='10' path='/010' element={<Offer6 />} />
 				<Route path='*' component={<NotFound />} />
 			</Routes>
 		</Router>
