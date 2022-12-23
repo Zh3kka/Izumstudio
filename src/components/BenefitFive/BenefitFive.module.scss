@@ -95,6 +95,13 @@
 @media screen and (max-width: 426px) {
 	.container {
 		text-align: center;
+		.benefit__five {
+			.titles {
+				> p {
+					font-size: 20px;
+				}
+			}
+		}
 	}
 }
 
