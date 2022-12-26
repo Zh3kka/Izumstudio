@@ -118,10 +118,11 @@ const ButtonFormOffer = ({ title, link }) => {
 									<Box className={styles.third__modal}>
 										<h2>Cертификат активирован!</h2> <br />
 										<h3>
-											<br /> Запишитесь на процедуру <br /> онлайн и{' '}
+											 Запишитесь на процедуру <br /> онлайн и{' '}
 											<span> получайте кешбэк 10%</span>
-											<br /> от стоимости всех процедур
+											<br /> от стоимости всех процедур 
 										</h3>
+										<br /> 
 										<a href={link} target='_blank' rel='noreferrer'>
 											<button className={styles.primary}>
 												Записаться онлайн
