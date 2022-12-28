@@ -19,7 +19,7 @@ const styleTwo = {
 	boxShadow: 20,
 }
 
-const HeaderOffer = () => {
+const HeaderOffer5 = () => {
 	// second modal
 	const [openTwoModal, setOpenTwoModal] = useState(false)
 	const handleOpenTwoModal = () => setOpenTwoModal(true)
@@ -42,7 +42,7 @@ const HeaderOffer = () => {
 				<div className={styles.buttons}>
 					<ButtonFormOffer
 						title='Активировать'
-						link='https://n851011.yclients.com/'
+						link='https://n851017.yclients.com/'
 					/>
 					<button onClick={handleOpenTwoModal} className={styles.secondary}>
 						<img src={ellipse} alt='эллипс' className={styles.ellipse} />
@@ -78,4 +78,4 @@ const HeaderOffer = () => {
 	)
 }
 
-export default HeaderOffer
+export default HeaderOffer5

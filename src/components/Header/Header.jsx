@@ -30,7 +30,7 @@ const Header = () => {
 		<div className={styles.bg} id='Top'>
 			<div className={styles.container}>
 				<h1>
-					Избавьтесь от лишних волос пройдя курс{' '}
+					Избавьтесь от лишних волос, пройдя курс{' '}
 					<span> безопасной эпиляции на диодном аппарате </span>нового поколения
 				</h1>
 				<div className={styles.buttons}>

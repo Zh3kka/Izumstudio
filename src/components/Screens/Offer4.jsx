@@ -8,7 +8,7 @@ import BenefitTwo from '../BenefitTwo/BenefitTwo'
 import BestStudio from '../BestStudio/BestStudio'
 import Contacts from '../Contacts/Contacts'
 import Footer from '../Footer/Footer'
-import HeaderOffer from '../HeaderOffer/HeaderOffer'
+import HeaderOffer4 from '../HeaderOffer4/HeaderOffer4'
 import MainMenu from '../MainMenu/MainMenu'
 import Masters from '../Masters/Masters'
 import Mission from '../Mission/Mission'
@@ -20,7 +20,7 @@ const Offer3 = () => {
 	return (
 		<div className={styles.body}>
 			<MainMenu />
-			<HeaderOffer />
+			<HeaderOffer4 />
 			<SelectOffer4 />
 			<BestStudio />
 			<BenefitOne />
