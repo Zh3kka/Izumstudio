@@ -41,7 +41,7 @@ const womansComplex = [
 		id: 3,
 		complex: `Комплекс 5 зоны`,
 		imagePath: require('../../../img/woman/wom3.webp'),
-		namingComplex: `Подмышки\r\nБикини тотальное\r\nНоги полностью\r\n2 малая зона в подарок\r\n`,
+		namingComplex: `Подмышки\r\nБикини тотальное\r\nНоги полностью\r\n2 малые зона в подарок\r\n`,
 		present: '(линия живота, губа, ареолы, пальцы)',
 		price: 3990,
 		oldPrice: 5000,
